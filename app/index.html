@@ -57,16 +57,16 @@
 
 
 
-        <div class="container">
+        <section class="container projects">
 
             <!-- BEGIN LIST OF PROJECTS -->
-            <div class="projects-list" id="projects-anchor">
+            <div class="tile-list" id="projects-anchor">
 
-              <div class="row project-row">
-                <div class="project-image">
+              <div class="row tile-row">
+                <div class="tile-image">
                   <img src="images/home-proj-1.jpg" alt="">
                 </div>
-                <div class="project-text">
+                <div class="tile-text">
                   <h3>Patrik Ervell</h3>
                   <hr>
                   <p>Creating eCommerce for menswear designer known for his modernist, utilitarian aesthetics.</p>
@@ -74,23 +74,23 @@
                 </div>
               </div>
 
-              <div class="row project-row">
-                <div class="project-text">
+              <div class="row tile-row">
+                <div class="tile-text">
                   <h3>Massive</h3>
                   <hr>
                   <p>Creating eCommerce for menswear designer known for his modernist, utilitarian aesthetics.</p>
                   <button class="btn btn-solid grey">Read More →</button>
                 </div>
-                <div class="project-image">
+                <div class="tile-image">
                   <img src="images/home-proj-2.jpg" alt="">
                 </div>
               </div>
 
-              <div class="row project-row">
-                <div class="project-image">
+              <div class="row tile-row">
+                <div class="tile-image">
                   <img src="images/home-proj-3.jpg" alt="">
                 </div>
-                <div class="project-text">
+                <div class="tile-text">
                   <h3>GypsySport</h3>
                   <hr>
                   <p>Creating eCommerce for menswear designer known for his modernist, utilitarian aesthetics.</p>
@@ -98,14 +98,14 @@
                 </div>
               </div>
 
-              <div class="row project-row">
-                <div class="project-text">
+              <div class="row tile-row">
+                <div class="tile-text">
                   <h3>11byBBS</h3>
                   <hr>
                   <p>Creating eCommerce for menswear designer known for his modernist, utilitarian aesthetics.</p>
                   <button class="btn btn-solid grey">Read More →</button>
                 </div>
-                <div class="project-image">
+                <div class="tile-image">
                   <img src="images/home-proj-4.jpg" alt="">
                 </div>
               </div>
@@ -113,100 +113,17 @@
             </div>
             <!-- END LIST OF PROJECTS -->
 
-        </div>
+        </section>
 
     </main>
     <!-- END CONTENT WRAPPER -->
 
 
-    <footer class="footer">
-      <div class="container footer-contact">
-        <div class="col footer-location">
-          <h3>LOCATION</h3>
-          <p>
-            72 Allen st, 3rd floor <br>
-            Lower East Side <br>
-            New York City, NY 10002
-          </p>
-          <a href="#">hello@halfhelix.com</a>
-        </div>
-        <div class="col footer-jobs">
-          <h3>JOIN OUR TEAM</h3>
-          <p>We're hiring! <br>
-          Check out our current <br>
-          job listings or contact us at:
-        </p>
-          <a href="#">jobs@halfhelix.com</a>
-        </div>
-        <div class="col footer-new-business">
-          <h3>NEW BUSINESS INQURIES</h3>
-          <p>Interested in working with us? <br>
-          Visit our Work With Us page <br>
-          or send us an email at</p>
-          <a href="#">biz@halfhelix.com</a>
-        </div>
-      </div>
-      <div class="container footer-signup">
-        <form class="footer-form" action="index.html" method="post">
-          <div class="footer-label">
-            <label for="email">Sign Up For Our Newsletter</label>
-          </div>
-          <div class="footer-input">
-            <input type="text" name="email" placeholder="Enter Your Email...">
-            <input type="submit" value="Submit">
-          </div>
-        </form>
-        <div class="footer-social">
-          <ul>
-            <a href=""><li>Instagram</li></a>
-            <a href=""><li>Twitter</li></a>
-            <a href=""><li>Github</li></a>
-          </ul>
-        </div>
-      </div>
+    @@include("partials/_footer.html")
 
-    </footer>
+    @@include("partials/_scripts.html")
 
-    <script src="javascripts/libs/jquery-2.1.1.js"></script>
-    <script src="javascripts/libs/sticky-kit.min.js"></script>
-    <script src="javascripts/main.js"></script>
 
-    <!-- segment.io: change XXXXXXXXXXXXXXXXXXXX to be your site's ID. -->
-    <script type="text/javascript">
-        ! function() {
-            var analytics = window.analytics = window.analytics || [];
-            if (!analytics.initialize)
-                if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
-                else {
-                    analytics.invoked = !0;
-                    analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
-                    analytics.factory = function(t) {
-                        return function() {
-                            var e = Array.prototype.slice.call(arguments);
-                            e.unshift(t);
-                            analytics.push(e);
-                            return analytics
-                        }
-                    };
-                    for (var t = 0; t < analytics.methods.length; t++) {
-                        var e = analytics.methods[t];
-                        analytics[e] = analytics.factory(e)
-                    }
-                    analytics.load = function(t) {
-                        var e = document.createElement("script");
-                        e.type = "text/javascript";
-                        e.async = !0;
-                        e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
-                        var n = document.getElementsByTagName("script")[0];
-                        n.parentNode.insertBefore(e, n)
-                    };
-                    analytics.SNIPPET_VERSION = "3.1.0";
-                    // change segment.io ID here
-                    analytics.load("wjOFwW3cKns3a5TSzFjoWt5HnagFuIkW");
-                    analytics.page()
-                }
-        }();
-    </script>
 
 </body>
 

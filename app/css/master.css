@@ -933,20 +933,21 @@ hr {
     z-index: -100;
     opacity: 0; }
 
-.project-row {
+.tile-row {
   display: flex;
   margin-bottom: 50px;
   height: 500px; }
 
-.project-image {
+.tile-image {
   flex-basis: 60%;
-  height: 100%; }
-  .project-image img {
+  height: 100%;
+  background: #3B73E2; }
+  .tile-image img {
     height: 500px;
     width: 100%;
     object-fit: cover; }
 
-.project-text {
+.tile-text {
   flex-basis: 40%;
   background-color: #F6F6F6;
   display: flex;
@@ -956,20 +957,20 @@ hr {
   text-align: center;
   height: 100%;
   padding: 30px; }
-  .project-text .btn {
+  .tile-text .btn {
     margin-top: 20px; }
-  .project-text h3 {
+  .tile-text h3 {
     font-family: "LarishNeue", sans-serif;
     font-size: 2.8125rem;
     margin: 0;
     padding-bottom: 20px; }
-  .project-text p {
+  .tile-text p {
     margin: 1.25rem 0 1.25rem 0;
     font-size: 0.875rem; }
 
-.projects-list {
+.tile-list {
   padding: 120px 0 60px 0; }
-  .projects-list__more {
+  .tile-list__more {
     display: flex;
     justify-content: center;
     padding: 50px 0; }

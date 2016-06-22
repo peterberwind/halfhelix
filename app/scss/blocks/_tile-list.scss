@@ -1,4 +1,4 @@
-.project {
+.tile {
 
   &-row {
     display: flex;
@@ -9,6 +9,7 @@
   &-image {
     flex-basis: 60%;
     height: 100%;
+    background: $blue;
 
     img {
       height: 500px;
@@ -45,7 +46,7 @@
   }
 }
 
-.projects-list {
+.tile-list {
   padding: 120px 0 60px 0;
 
   &__more {
