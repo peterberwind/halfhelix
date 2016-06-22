@@ -1310,21 +1310,21 @@ input[type="submit"] {
     cursor: pointer; }
 
 .grey {
-  border: 4px solid #3D3D3D;
+  border: 3px solid #3D3D3D;
   background-color: #3D3D3D; }
   .grey:hover {
     background-color: transparent;
     color: #3D3D3D; }
 
 .blue {
-  border: 4px solid #3B73E2;
+  border: 3px solid #3B73E2;
   background-color: #3B73E2; }
   .blue:hover {
     background-color: transparent;
     color: #3B73E2; }
 
 .white {
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   background-color: transparent; }
   .white:hover {
     background-color: #fff;

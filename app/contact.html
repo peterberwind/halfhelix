@@ -1,76 +1,56 @@
 @@include('partials/_head.html')
 
-  <body>
-
+<body>
   <div class="mobile-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-    <header class="header-home header header--black">
-        <a href="/" class="header__studio-name">NO2</a>
-        <nav class="header__nav">
-            <ul>
-                <li>
-                    <a href="index.html#projects-anchor">PROJECTS</a>
-                </li>
-                <li>
-                    <a href="studio.html">STUDIO</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-        <div class="data-map" data-zoom='15' data-cord="40.715053, -74.002844"></div>
-        <div class="data-pointmarker" data-cord="40.717624, -73.993729"></div>
-        <div class="map">
-            <div class="map-widget" id="map">
+  <header class="header-home header">
+    <a class="header__studio-name" href="index.html">Half Helix</a>
+    <nav class="header__nav">
+      <ul>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="case-study.html">Studio</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="m">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content-wrapper">
+    <div class="hire-form-wrapper is-dark-area">
+      <h1>Get In Touch</h1>
+    </div>
 
-            </div>
-            <ul class="contact-info">
-                <li>
-                    <h2>Mail</h2>
-                    <a href="maito:Hello@no2.co">Hello@no2.co</a>
-                </li>
-                <li>
-                    <h2>Hire</h2>
-                    <a href="mailto:biz@no2.co">Tell Us About Your Project.</a>
-                </li>
-                <li>
-                    <h2>Visit</h2>
-                    <address class="link">
-                      <a href="https://www.google.com/maps/place/72+Allen+St,+New+York,+NY+10002/@40.7175139,-73.9931157,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259877afbc945:0x3bc400d805a96b78">
-                        72 Allen St<br>
-                        Lower East Side <br>
-                        New York City, NY 10002
-                      </a>
-                    </address>
-                </li>
-            </ul>
-            <ul class="map-footer-menu">
-                <li>
-                    <a href="https://www.instagram.com/no2.co/">Instagram</a>
-                </li>
-                <li>
-                    <a href="https://github.com/no2-co">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/no2_co">Twitter</a>
-                </li>
-                <!-- <li>
-                    <a href="#">Blog</a>
-                </li> -->
-            </ul>
-        </div>
+    <section class="contact-section">
+      <div class="map-widget" id="map2">
 
-        @@include("partials/_footer.html")
+      </div>
+      <div class="contact-section__text text-center">
+        <h3>New York City</h3>
+        <p>72 Allen Street</p>
+        <p>3rd Floor</p>
+        <p>Lower East Side</p>
+        <p>New York City, NY 10002</p>
+      </div>
+    </section>
+  </main>
 
-        @@include("partials/_scripts.html")
+  @@include("partials/_footer.html")
+  @@include("partials/_scripts.html")
 
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script src="javascripts/libs/fagmap.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+  <script src="js/libs/fagmap.js"></script>
 
-  </body>
+</body>
+
 </html>
