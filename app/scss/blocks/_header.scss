@@ -1,0 +1,136 @@
+.header {
+    position: fixed;
+    z-index: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 24px;
+    letter-spacing: rem(1.2);
+    transition-duration: 0.6s;
+    transition-property: opacity;
+
+    .header__studio-name {
+        color: #000;
+        font-family: $ff-base;
+
+        @include breakpoint(small) {
+            font-size: rem(14);
+        }
+
+
+        &.anchor-js {
+            cursor: url("../images/arrow-top.png"), s-resize;
+            @include breakpoint(small) {
+                font-size: rem(18);
+            }
+
+        }
+    }
+
+    .header__nav {
+        width: 450px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            @include breakpoint(small) {
+                padding: 15px 5px;
+            }
+
+            a {
+                transition-duration: 0.6s;
+                transition-property: color;
+                color: $dark-grey;
+                padding-bottom: 1px;
+                border-bottom: 1px solid $white;
+                transition: .4s ease-in-out;
+
+                @include breakpoint(small) {
+                    font-size: rem(14);
+                }
+            }
+
+            a:hover, a:active, a.active {
+                text-decoration: line-through;
+                border-bottom: none;
+            }
+        }
+    }
+
+    &.header--whitout-studio-name {
+        right: 0;
+        left: 200px;
+        width: auto;
+
+        .header__studio-name {
+            opacity: 0;
+        }
+    }
+
+    &.header--white {
+        .header__studio-name {
+            color: #fff;
+        }
+
+        .header__nav {
+            ul {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &.header--black {
+        .header__studio-name {
+            color: $brand-color;
+        }
+
+        .header__nav {
+            ul {
+                a {
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+
+    &.header--transparent {
+        opacity: 0;
+    }
+}
+
+
+@include breakpoint(extra-small) {
+
+    .header__nav {
+        width: auto !important;
+        position: fixed;
+        width: 100% !important;
+        height: 100%;
+        top: 0 !important;
+        left: 0 !important;
+        background: #fff;
+        display: none;
+        padding: 0;
+        z-index: 998;
+        ul {
+            display: block !important;
+            a {
+                color: $brand-color !important;
+                display: block;
+                text-decoration: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+
+}

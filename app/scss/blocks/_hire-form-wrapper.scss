@@ -1,0 +1,46 @@
+.hire-form-wrapper {
+	background: $blue;
+	margin: 0 -24px;
+  padding-top: 10vh;
+  padding-bottom: 14vh;
+
+    h1 {
+        margin-bottom: 78px;
+        text-align: center;
+				font-family: $ff-serif;
+    }
+    .form {
+    	width: 80%;
+    	max-width: 1000px;
+    	margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+    }
+
+
+
+}
+
+@include breakpoint(small) {
+    .hire-form-wrapper {
+        margin: 0 -10px;
+        .form {
+            width: auto;
+            padding: 0 24px;
+        }
+        .form__item {
+            padding-bottom: 45px;
+            input[type=text] {
+                border-bottom-width: 2px;
+                font-size: rem(14);
+            }
+        }
+        .form__submit {
+            margin-top: 15px;
+            padding: 5px 0;
+            width: 100%;
+        }
+    }
+
+}

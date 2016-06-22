@@ -1,0 +1,23 @@
+.mac-book {
+    position: relative;
+    max-width: 1055px;
+    margin: 0 auto;
+
+    &__bg {
+        position: relative;
+        width: 100%;
+        z-index: 20;
+    }
+
+    &__front {
+        position: absolute;
+        top: 5.5%;
+        left: 11.5%;
+        z-index: 19;
+        width: 77%;
+    }
+
+    @include breakpoint(extra-large) {
+        max-width: 1200px;
+    }
+}

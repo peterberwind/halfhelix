@@ -1,0 +1,6 @@
+.content-wrapper {
+    margin: 0 24px;
+    @include breakpoint(extra-small) {
+		margin: 0 10px;
+    }
+}

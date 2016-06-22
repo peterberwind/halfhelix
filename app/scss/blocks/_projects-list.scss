@@ -1,0 +1,56 @@
+.project {
+
+  &-row {
+    display: flex;
+    margin-bottom: $vertical-spacing;
+    height: 500px;
+  }
+
+  &-image {
+    flex-basis: 60%;
+    height: 100%;
+
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-text {
+    flex-basis: 40%;
+    background-color: $light-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    padding: 30px;
+
+    .btn {
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-family: $ff-serif;
+      font-size: rem(45);
+      margin: 0;
+      padding-bottom: 20px;
+    }
+    p {
+      margin: rem(20) 0 rem(20) 0;
+      font-size: rem(14);
+    }
+  }
+}
+
+.projects-list {
+  padding: 120px 0 60px 0;
+
+  &__more {
+    display: flex;
+    justify-content: center;
+    padding: $vertical-spacing 0;
+  }
+}

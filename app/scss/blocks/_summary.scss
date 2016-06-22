@@ -1,0 +1,31 @@
+.summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 190px;
+
+    h4 {
+        font-size: rem(24);
+        letter-spacing: rem(2.5);
+        margin-right: 30px;
+    }
+
+    &__anchor-list {
+        display: flex;
+        width: 70%;
+        max-height: 70px;
+        padding-top: 5px;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        a {
+            padding-left: 30px;
+            text-transform: none;
+        }
+    }
+
+    @include breakpoint(extra-large) {
+        &__anchor-list {
+            max-height: 80px;
+        }
+    }
+}

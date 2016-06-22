@@ -1,0 +1,13 @@
+.map-footer-menu {
+    position: fixed;
+    bottom: 26px;
+    z-index: 600;
+    width: 100%;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: 0 20px;
+        padding: 0 8px;
+    }
+}

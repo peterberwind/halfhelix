@@ -1,0 +1,26 @@
+body {
+    background-color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.homepage-logo {
+	height: 13vmin;
+	display: block;
+	margin-bottom: 5vmin;
+}
+
+
+.text-center {
+	text-align: center;
+}
+.text-white {
+	color: #fff;
+}
+
+hr {
+  width: 120px;
+  border: 1px solid $dark-grey;
+}

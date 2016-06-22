@@ -1,0 +1,35 @@
+.slogan-section {
+    @extend .full-screen-section;
+
+    position: relative;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1em;
+        font-family: $ff-serif;
+        font-size: rem(40);
+        @include breakpoint(extra-small) {
+            font-size: rem(22);
+        }
+    }
+
+    @include breakpoint(small) {
+        br {
+            display: none;
+        }
+    }
+    a {
+        font-size: rem(12);
+        text-decoration: underline;
+        letter-spacing: $base-letter-spacing;
+        &:hover {
+          text-decoration: line-through;
+        }
+        @include breakpoint(small) {
+            font-size: rem(18);
+        }
+        @include breakpoint(extra-small) {
+            font-size: rem(14);
+        }
+    }
+}

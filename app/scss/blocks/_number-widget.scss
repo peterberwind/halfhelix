@@ -1,0 +1,11 @@
+.number-widget {
+    position: fixed;
+    left: 10px;
+    bottom: 100px;
+    z-index: 300;
+    transform: rotate(90deg);
+
+    @include breakpoint(medium-height) {
+        bottom: 50px;
+    }
+}

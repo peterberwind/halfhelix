@@ -1,0 +1,14 @@
+.anchor {
+    display: block;
+    letter-spacing: rem(1.2);
+    cursor: url("../images/arrow-down.png"), s-resize;
+
+    &::before {
+        content: "\2193";
+        display: block;
+        font-size: rem(25);
+        text-align: center;
+        line-height: 1.25;
+        margin-bottom: 0.5em;
+    }
+}

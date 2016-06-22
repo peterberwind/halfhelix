@@ -1,0 +1,86 @@
+body {
+    @include font-feature-settings("kern", "liga", "pnum");
+
+    -webkit-font-smoothing: antialiased;
+    color: $base-font-color;
+    font-family: $ff-base;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    letter-spacing: $base-letter-spacing;
+}
+
+html {
+    @include breakpoint(extra-large) {
+        font-size: 19px;
+    }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $ff-bold;
+    font-size: $base-font-size;
+    line-height: $heading-line-height;
+    margin: 0 0 $small-spacing;
+    color: $base-font-color;
+}
+
+h1 {
+    font-size: rem(60);
+}
+
+h2 {
+    font-size: rem(38);
+}
+h3 {
+    font-size: rem(24);
+}
+
+p {
+    margin: 0 0 $small-spacing;
+    font-size: rem(16);
+    line-height: 2.2;
+    @include breakpoint(small) {
+        font-size: rem(18);
+    }
+    @include breakpoint(extra-small) {
+        font-size: 4vmin;
+    }
+}
+
+a, .link {
+    color: $base-link-color;
+    text-decoration: none;
+
+    //transition: color 0.1s linear;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: darken($base-link-color, 15%);
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+img,
+picture {
+    margin: 0;
+    max-width: 100%;
+}
+
+address {
+    font-style: normal;
+}
+
+::selection {
+  background: $blue;
+  color: $light-grey;
+}

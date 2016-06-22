@@ -1,0 +1,51 @@
+.mobile-toggle {
+	position: fixed;
+	top: 11px;
+	right: 0;
+	padding: 10px;
+	width: 20px;
+	height: 32px;
+	z-index: 999;
+	display: none;
+
+
+	span {
+		width: 20px;
+		height: 2px;
+		background: #000;
+		margin-top: 5px;
+		display: block;
+		transition: 0.33s transform;
+	}
+	&.open {
+		span:nth-child(1) {
+			transform: rotate(-45deg);
+			position: absolute;
+			right: 10px;
+			top: 15px;
+		}
+		span:nth-child(2) {
+			transform: rotate(45deg);
+			position: absolute;
+			right: 10px;
+			top: 15px;
+		}
+		span:nth-child(3) {
+			transform: scale(0);
+			position: absolute;
+			visibility: hidden;
+		}
+	}
+	&.white:not(.open) {
+		&:after {
+			color: #fff;
+		}
+		span {
+			background: #fff;
+		}
+	}
+
+	@include breakpoint(extra-small) {
+		display: block;
+	}
+}

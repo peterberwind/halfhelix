@@ -1,0 +1,45 @@
+// Typography
+$ff-base: "Moderat-Regular", sans-serif;
+$ff-bold: "Moderat-Bold", sans-serif;
+$ff-serif: "LarishNeue", sans-serif;
+
+// Font Sizes
+$base-font-size: rem(14);
+
+// Line height
+$base-line-height: 1.8;
+$heading-line-height: 1.4;
+
+// Letter spacing
+$base-letter-spacing: .125em;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #3B73E2;
+$red: #d0021b;
+$dark-grey: #3D3D3D;
+$green: #CEF3DD;
+$light-blue: #D4F7FE;
+$light-grey: #F6F6F6;
+$medium-grey: #DADADA;
+$white: #fff;
+
+$brand-color: $dark-grey;
+$bg-color-primary: #FFFFFF;
+$bg-color-secondary: $light-grey;
+
+// Font Colors
+
+$base-font-color: $brand-color;
+$base-link-color: $brand-color;
+
+
+// Bourbon / neat overrides
+$border-box-sizing: 'content-box' !default;
+
+$vertical-spacing: 50px;

@@ -1,0 +1,21 @@
+.project-article {
+    z-index: 100;
+
+    &__title {
+        margin-bottom: 34px;
+        font-family: 'univers-bold-obl';
+        font-size: rem(28);
+        letter-spacing: $base-letter-spacing;
+    }
+
+    &__description {
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    &.hidden {
+        z-index: -100;
+        opacity: 0;
+    }
+}

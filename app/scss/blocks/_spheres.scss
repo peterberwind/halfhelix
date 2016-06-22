@@ -1,0 +1,26 @@
+.spheres {
+	&__item {
+		border-radius: 50%;
+		background-image: radial-gradient(circle at 50% 50%, #ffffff, #6262ff 87%, #0000ff);
+		position: absolute;
+		z-index: -1;
+	}
+	&__item--one {
+		width: 19vmin;
+		height: 19vmin;
+		top: 15vh;
+		right: 27vmin;
+	}
+	&__item--two {
+		width: 19vmin;
+		height: 19vmin;
+		top: 21vmin;
+		left: 15vmin;
+	}
+	&__item--three {
+		width: 32vmin;
+		height: 32vmin;
+		bottom: 6vmin;
+		right: 30vmin;
+	}
+}

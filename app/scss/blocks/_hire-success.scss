@@ -1,0 +1,19 @@
+.hire-success {
+    display: none;
+    margin-top: 200px;
+    font-family: 'apercu-bold-italic';
+    font-size: rem(26);
+    text-align: center;
+    letter-spacing: $base-letter-spacing;
+
+    p {
+        margin-bottom: 46px;
+        color: #fff;
+    }
+
+    a {
+        text-transform: none;
+        color: inherit;
+        text-decoration: underline;
+    }
+}

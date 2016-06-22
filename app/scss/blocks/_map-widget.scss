@@ -1,0 +1,19 @@
+.map-widget {
+    @extend .full-screen-section;
+
+    a {
+        img {
+            display: none;
+        }
+    }
+
+    .gm-style-cc {
+        display: none;
+    }
+
+    .gmnoprint.gm-bundled-control {
+        .gmnoprint {
+            border: 1px solid #000 !important;
+        }
+    }
+}

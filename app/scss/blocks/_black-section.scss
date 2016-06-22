@@ -1,0 +1,152 @@
+.black-section {
+    @extend .full-screen-section;
+
+    overflow: hidden;
+    background-color: $blue;
+    color: #fff;
+    background-image: url("../images/smile.svg");
+    background-position: center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+
+    &.third {
+      @extend .third-screen-section;
+
+    }
+
+    a {
+        color: #fff;
+        display: inline-block;
+        padding: 0 10%;
+        @include breakpoint(small) {
+            font-size: rem(18);
+        }
+        @include breakpoint(extra-small) {
+            font-size: rem(18);
+        }
+    }
+
+    &__paralax-block {
+        @extend .full-screen-section;
+
+        &.third {
+          @extend .third-screen-section;
+        }
+
+        position: relative;
+        z-index: 400;
+        will-change: transform;
+        transition-property: opacity;
+        transition-duration: 1s;
+
+        &.hidden {
+            opacity: 0;
+        }
+    }
+
+    &__email {
+        position: absolute;
+        top: 20px;
+        left: 24px;
+        z-index: 200;
+        font-style: normal;
+        text-decoration: underline;
+        @include breakpoint(extra-small) {
+
+            left: 10px;
+        }
+        &:hover {
+            text-decoration: line-through;
+        }
+        a {
+          padding: 0;
+
+          @include breakpoint(extra-small) {
+            font-size: rem(14)
+          }
+        }
+        .third & {
+          text-decoration: none;
+        }
+    }
+
+    &__banner {
+        @extend .v-align;
+
+        width: 80%;
+        margin: 0;
+        padding: 0 10%;
+        text-align: center;
+        @include breakpoint(small) {
+           width: auto;
+           padding: 0 24px;
+        }
+        @include breakpoint(extra-small) {
+          padding: 0 10px;
+        }
+
+        h1 {
+          font-size: rem(120);
+          font-family: $ff-base;
+          color: $white;
+          font-style: normal;
+          letter-spacing: rem(8);
+          margin-bottom: 0em;
+
+           .third & {
+             font-size: rem(50);
+             line-height: 1.25;
+             letter-spacing: 0;
+             color: #fff;
+             text-transform: none;
+             @include breakpoint(small) {
+                font-size: rem(45);
+             }
+             @include breakpoint(extra-small) {
+                 font-size: 7vmin;
+                 padding: 0 10px;
+             }
+           }
+        }
+
+        h3 {
+            margin-bottom: rem(40);;
+            font-family: $ff-base;
+            font-size: rem(20);
+            font-style: normal;
+            letter-spacing: rem(2.5);
+            font-weight: normal;
+            color: #fff;
+            // font-weight: 600;
+            @include breakpoint(small) {
+              padding: 0 24px;
+            }
+            .third & {
+              font-size: rem(16);
+              padding: 20px 0;
+              margin-bottom: 1em;
+              letter-spacing: 0.1em;
+              @include breakpoint(small) {
+                 font-size: rem(20);
+              }
+              @include breakpoint(extra-small) {
+                  font-size: 5vmin;
+                  padding: 0 10px;
+              }
+
+            }
+        }
+    }
+
+  & &__anchor {
+    position: absolute;
+    bottom: 1.5em;
+    height: 72px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    white-space: nowrap;
+  }
+}

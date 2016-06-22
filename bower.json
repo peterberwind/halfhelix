@@ -1,0 +1,12 @@
+{
+  "name": "halfhelixSite",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.8.0"
+  },
+  "overrides": {}
+}

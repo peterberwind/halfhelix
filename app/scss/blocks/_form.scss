@@ -1,0 +1,33 @@
+.form {
+    &__item {
+        position: relative;
+        padding-bottom: $vertical-spacing;
+
+        &--error {
+            input {
+                color: $red;
+                border-color: $red;
+
+                @include placeholder-color($red);
+            }
+
+            .form__error-message {
+                display: block;
+            }
+        }
+    }
+
+    &__error-message {
+        position: absolute;
+        display: none;
+        margin-top: 5px;
+        color: $red;
+    }
+
+    &__submit {
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,41 @@
+.v-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+.center-narrow {
+	width: 70%;
+	margin: 0 auto;
+    text-align: center;
+    @include breakpoint(small) {
+        width: auto;
+    }
+}
+
+.full-screen-section {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.half-screen-section {
+    width: 100%;
+    min-height: 50vh;
+    box-sizing: border-box;
+}
+
+.third-screen-section {
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+}
+
+.quarter-screen-section {
+    width: 100%;
+    min-height: 30vh;
+    box-sizing: border-box;
+}
