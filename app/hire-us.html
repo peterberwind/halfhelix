@@ -1,91 +1,69 @@
 @@include('partials/_head.html')
 
-  <body>
-        <div class="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+<body>
+  @@include('partials/_header.html')
+  
+  <main class="content-wrapper">
+    <div class="hire-form-wrapper is-dark-area">
+      <h1 class="text-center text-white">Hire Us.</h1>
+      <form action="/" class="form">
+        <div class="form__item">
+          <input type="text" placeholder="What’s your name?">
+          <div class="form__error-message">Looks like this name is wrong!</div>
         </div>
-        <header class="header-home header">
-        	<a class="header__studio-name" href="index.html">Half Helix</a>
-        	<nav class="header__nav">
-        		<ul>
-        			<li>
-        				<a href="projects.html">Projects</a>
-        			</li>
-        			<li>
-        				<a href="case-study.html">Studio</a>
-        			</li>
-        			<li>
-        				<a href="#">Careers</a>
-        			</li>
-					<li>
-        				<a href="map.html">Contact</a>
-        			</li>
-        		</ul>
-        	</nav>
-        </header>
-        <main class="content-wrapper">
-            <div class="hire-form-wrapper is-dark-area">
-                <h1 class="text-center text-white">Hire Us.</h1>
-                <form action="/" class="form">
-                    <div class="form__item">
-                        <input type="text" placeholder="What’s your name?">
-                        <div class="form__error-message">Looks like this name is wrong!</div>
-                    </div>
-                    <div class="form__item">
-                        <input type="text" placeholder="What’s your email?">
-                        <div class="form__error-message">Looks like this email is wrong!</div>
-                    </div>
-                    <div class="form__item">
-                        <input type="text" placeholder="What’s your phone number?">
-                        <div class="form__error-message">Looks like this phone number is wrong!</div>
-                    </div>
-                    <div class="form__item">
-                        <input type="text" placeholder="What would you like to hire us to do for you?">
-                        <div class="form__error-message">something error text</div>
-                    </div>
-                    <div class="form__item">
-                        <input type="text" placeholder="What is your budget?">
-                        <div class="form__error-message">something error text</div>
-                    </div>
-                    <div class="form__item">
-                        <input type="text" placeholder="How did you hear about us?">
-                        <div class="form__error-message">something error text</div>
-                    </div>
-                    <button type="submit" class="btn white">
-                        SUBMIT
-                    </button>
-                </form>
-                <div class="hire-success">
-                    <p>Thanks for reaching out to us!<br>
-                    Someone from our team will be in touch with you shortly.</p>
-                    <p>If you need anything right away,<br>
-                    feel free to email us at <a href="mailto:hello@pwrsof10.com">hello@pwrsof10.com</a></p>
-                </div>
-            </div>
+        <div class="form__item">
+          <input type="text" placeholder="What’s your email?">
+          <div class="form__error-message">Looks like this email is wrong!</div>
+        </div>
+        <div class="form__item">
+          <input type="text" placeholder="What’s your phone number?">
+          <div class="form__error-message">Looks like this phone number is wrong!</div>
+        </div>
+        <div class="form__item">
+          <input type="text" placeholder="What would you like to hire us to do for you?">
+          <div class="form__error-message">something error text</div>
+        </div>
+        <div class="form__item">
+          <input type="text" placeholder="What is your budget?">
+          <div class="form__error-message">something error text</div>
+        </div>
+        <div class="form__item">
+          <input type="text" placeholder="How did you hear about us?">
+          <div class="form__error-message">something error text</div>
+        </div>
+        <button type="submit" class="btn white">
+          SUBMIT
+        </button>
+      </form>
+      <div class="hire-success">
+        <p>Thanks for reaching out to us!
+          <br> Someone from our team will be in touch with you shortly.</p>
+        <p>If you need anything right away,
+          <br> feel free to email us at <a href="mailto:hello@pwrsof10.com">hello@pwrsof10.com</a></p>
+      </div>
+    </div>
 
-            <section class="contact-section">
-                <div class="map-widget" id="map2">
+    <section class="contact-section">
+      <div class="map-widget" id="map2">
 
-                </div>
-                <div class="contact-section__text text-center">
-                    <h3>New York Studio</h3>
-                    <p>72 Allen Street</p>
-                    <p>3rd Floor</p>
-                    <p>Lower East Side</p>
-                    <p>New York City, NY 10002</p>
-                </div>
-            </section>
-        </main>
+      </div>
+      <div class="contact-section__text text-center">
+        <h3>New York Studio</h3>
+        <p>72 Allen Street</p>
+        <p>3rd Floor</p>
+        <p>Lower East Side</p>
+        <p>New York City, NY 10002</p>
+      </div>
+    </section>
+  </main>
 
-        @@include("partials/_footer.html")
+  @@include("partials/_footer.html")
+  @@include("partials/_scripts.html")
 
-        @@include("partials/_scripts.html")
-        
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script src="https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.js"></script>
-        <script src="javascripts/libs/fagmap.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="https://google-maps-utility-library-v3.googlecode.com/svn-history/r391/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+  <script src="javascripts/libs/fagmap.js"></script>
 
-  </body>
+</body>
+
 </html>
