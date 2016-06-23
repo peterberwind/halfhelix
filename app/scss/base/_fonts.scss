@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Moderat-Bold';
-  src: url('Moderat-Bold.eot?#iefix') format('embedded-opentype'),  url('Moderat-Bold.otf')  format('opentype'),
-	     url('Moderat-Bold.woff') format('woff'), url('Moderat-Bold.ttf')  format('truetype'), url('Moderat-Bold.svg#Moderat-Bold') format('svg');
+  src: url('../fonts/Moderat-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Moderat-Bold.otf')  format('opentype'),
+	     url('../fonts/Moderat-Bold.woff') format('woff'), url('../fonts/Moderat-Bold.ttf')  format('truetype'), url('../fonts/Moderat-Bold.svg#Moderat-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,15 +9,15 @@
 
 @font-face {
   font-family: 'Moderat-Regular';
-  src: url('Moderat-Regular.eot?#iefix') format('embedded-opentype'),  url('Moderat-Regular.otf')  format('opentype'),
-	     url('Moderat-Regular.woff') format('woff'), url('Moderat-Regular.ttf')  format('truetype'), url('Moderat-Regular.svg#Moderat-Regular') format('svg');
+  src: url('../fonts/Moderat-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Moderat-Regular.otf')  format('opentype'),
+	     url('../fonts/Moderat-Regular.woff') format('woff'), url('../fonts/Moderat-Regular.ttf')  format('truetype'), url('../fonts/Moderat-Regular.svg#Moderat-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LarishNeue';
-  src: url('LarishNeue.eot?#iefix') format('embedded-opentype'),  url('LarishNeue.woff') format('woff'), url('LarishNeue.ttf')  format('truetype'), url('LarishNeue.svg#LarishNeue') format('svg');
+  src: url('../fonts/LarishNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/LarishNeue.woff') format('woff'), url('../fonts/LarishNeue.ttf')  format('truetype'), url('../fonts/LarishNeue.svg#LarishNeue') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -29,56 +29,3 @@
     font-weight: normal;
     font-style: normal;
 }
-//
-// @font-face {
-//     font-family: 'apercu-bold';
-//     src: url("../fonts/apercu-bold-webfont.eot");
-//     src: url("../fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu-bold-webfont.woff2") format("woff2"), url("../fonts/apercu-bold-webfont.woff") format("woff"), url("../fonts/apercu-bold-webfont.ttf") format("truetype"), url("../fonts/apercu-bold-webfont.svg#AvenirLTStd-Medium") format("svg");
-//     font-weight: normal;
-//     font-style: normal;
-// }
-//
-// @font-face {
-//     font-family: 'apercu-bold-italic';
-//     src: url("../fonts/Apercu-BoldItalic.eot");
-//     src: url("../fonts/Apercu-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Apercu-BoldItalic.woff") format("woff"), url("../fonts/Apercu-BoldItalic.ttf") format("truetype"), url("../fonts/Apercu-BoldItalic.svg#AvenirLTStd-Medium") format("svg");
-//     font-weight: normal;
-//     font-style: normal;
-// }
-//
-// @font-face {
-//     font-family: 'apercu-medium-italic';
-//     src: url("../fonts/Apercu-MediumItalic.eot");
-//     src: url("../fonts/Apercu-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Apercu-MediumItalic.woff") format("woff"), url("../fonts/Apercu-MediumItalic.ttf") format("truetype"), url("../fonts/Apercu-MediumItalic.svg#AvenirLTStd-Medium") format("svg");
-//     font-weight: normal;
-//     font-style: normal;
-// }
-//
-//
-// @font-face {
-//     font-family: 'apercu-medium';
-//     src: url("../fonts/Apercu-Medium.eot");
-//     src: url("../fonts/Apercu-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Apercu-Medium.woff") format("woff"), url("../fonts/Apercu-Medium.ttf") format("truetype"), url("../fonts/Apercu-Medium.svg#AvenirLTStd-Medium") format("svg");
-//     font-weight: normal;
-//     font-style: normal;
-// }
-//
-// @font-face {
-// 	font-family: 'apercu-black';
-// 	src: url('../fonts/Apercu-Black.eot');
-// 	src: url('../fonts/Apercu-Black.eot?#iefix') format('embedded-opentype'),
-// 		url('../fonts/Apercu-Black.woff') format('woff'),
-// 		url('../fonts/Apercu-Black.ttf') format('truetype');
-// 	font-weight: 900;
-// 	font-style: normal;
-// }
-//
-// @font-face {
-// 	font-family: 'apercu-light';
-// 	src: url('../fonts/Apercu-Light.eot');
-// 	src: url('../fonts/Apercu-Light.eot?#iefix') format('embedded-opentype'),
-// 		url('../fonts/Apercu-Light.woff') format('woff'),
-// 		url('../fonts/Apercu-Light.ttf') format('truetype');
-// 	font-weight: 300;
-// 	font-style: normal;
-// }
