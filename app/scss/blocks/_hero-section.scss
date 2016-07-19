@@ -1,14 +1,17 @@
-.black-section {
+.hero-section {
     @extend .full-screen-section;
 
     overflow: hidden;
     background-color: $blue;
     color: #fff;
-    background-image: url("../images/smile.svg");
     background-position: center center;
     background-size: 60%;
     background-repeat: no-repeat;
     background-blend-mode: color-dodge;
+
+    .home & {
+      background-image: url("../images/smile.svg");
+    }
 
     &.third {
       @extend .third-screen-section;
@@ -93,6 +96,12 @@
           font-style: normal;
           letter-spacing: rem(8);
           margin-bottom: 0em;
+          font-weight: bold;
+
+          .page & {
+            font-family: $ff-serif;
+            font-weight: normal;
+          }
 
            .third & {
              font-size: rem(50);

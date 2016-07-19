@@ -197,7 +197,7 @@ function initEvents() {
     videoMobilePause();
     initMenuToggle();
     if ($('.home').length > 0) {
-        initHeaderBlockParalax(".black-section__paralax-block");
+        initHeaderBlockParalax(".hero-section__paralax-block");
 
         $(document).ready(function() {
             difficultHomeHeaderLogic($(window).scrollTop());

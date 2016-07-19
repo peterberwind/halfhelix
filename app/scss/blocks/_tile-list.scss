@@ -1,3 +1,9 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $vertical-spacing;
+}
+
 .tile {
 
   &-row {
@@ -42,6 +48,27 @@
     p {
       margin: rem(20) 0 rem(20) 0;
       font-size: rem(14);
+    }
+  }
+
+  &-half {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-title {
+    width: 100%;
+    background-color: $light-grey;
+    padding: 10px 20px;
+
+    h2 {
+      font-family: $ff-serif;
+      margin-bottom: .4em;
+    }
+
+    p {
+      margin-bottom: .0em;
     }
   }
 }

@@ -32,8 +32,7 @@ MASTER: IMPORTING STYLESHEETS
 // Blocks
 @import "blocks/content-wrapper";
 @import "blocks/header";
-@import "blocks/studio-sections";
-@import "blocks/black-section";
+@import "blocks/hero-section";
 @import "blocks/anchor";
 @import "blocks/slogan-section";
 @import "blocks/footer";
@@ -56,6 +55,7 @@ MASTER: IMPORTING STYLESHEETS
 @import "blocks/click-to-action";
 @import "blocks/spheres";
 @import "blocks/mobile-toggle";
+@import "blocks/studio-sections";
 
 // Layouts
 @import "layouts/layout-helpers"

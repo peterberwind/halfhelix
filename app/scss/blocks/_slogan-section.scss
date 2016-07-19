@@ -8,6 +8,7 @@
         margin-bottom: 1em;
         font-family: $ff-serif;
         font-size: rem(40);
+        line-height: 1.6em;
         @include breakpoint(extra-small) {
             font-size: rem(22);
         }
