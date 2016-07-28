@@ -2,15 +2,23 @@
     @extend .full-screen-section;
 
     overflow: hidden;
-    background-color: $blue;
+    background-image: linear-gradient(123deg, #6dabf3, #3b73e2);
     color: #fff;
-    background-position: center center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-blend-mode: color-dodge;
 
     .home & {
-      background-image: url("../images/smile.svg");
+      position: relative;
+      svg {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 90%;
+        position: absolute;
+        z-index: 1;
+        g, text, path {
+          fill: #74A3EE;
+          stroke: #74A3EE;
+        }
+      }
     }
 
     &.third {

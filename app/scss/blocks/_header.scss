@@ -45,11 +45,8 @@
             a {
                 transition-duration: 0.6s;
                 transition-property: color;
-                color: $dark-grey;
-                padding-bottom: 1px;
-                border-bottom: 1px solid $white;
+                color: #fff;
                 transition: .4s ease-in-out;
-
                 @include breakpoint(small) {
                     font-size: rem(14);
                 }
@@ -57,52 +54,11 @@
 
             a:hover, a:active, a.active {
                 text-decoration: line-through;
-                border-bottom: none;
             }
         }
     }
 
-    &.header--whitout-studio-name {
-        right: 0;
-        left: 200px;
-        width: auto;
-
-        .header__studio-name {
-            opacity: 0;
-        }
-    }
-
-    &.header--white {
-        .header__studio-name {
-            color: #fff;
-        }
-
-        .header__nav {
-            ul {
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
-
-    &.header--black {
-        .header__studio-name {
-            color: $brand-color;
-        }
-
-        .header__nav {
-            ul {
-                a {
-                    color: $brand-color;
-                }
-            }
-        }
-    }
-
-    &.header--transparent {
-        opacity: 0;
-    }
+    
 }
 
 

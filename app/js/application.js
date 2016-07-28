@@ -13,29 +13,6 @@ var header = $('.header'),
         listOffset: []
     };
 
-function initBlackAreaList() {
-    var blackItemlist = $(DARK_AREA_ITEMS),
-        TOP_IDENT = 25;
-
-    blackAreaList = [];
-
-    for (var i = blackItemlist.length - 1; i >= 0; i--) {
-        var bItem = $(blackItemlist[i]);
-        blackAreaList.push({
-            start: bItem.offset().top - TOP_IDENT,
-            end: bItem.offset().top + bItem.innerHeight() - TOP_IDENT
-        });
-    };
-}
-
-function inBlackArea(scrollTop) {
-    for (var i = blackAreaList.length - 1; i >= 0; i--) {
-        if ((blackAreaList[i].end > scrollTop) && (blackAreaList[i].start < scrollTop)) {
-            return true;
-        };
-    }
-    return false;
-}
 
 function setCurrentArticles(scrollTop) {
     var topIndent = 200;
@@ -85,47 +62,6 @@ function initPagination() {
     })
 }
 
-function headerSetState(state) {
-    switch (state) {
-        case 'no-name':
-            $(header).removeClass('header--transparent').addClass('header--whitout-studio-name').addClass('header--white');
-            $('.mobile-toggle').addClass('white');
-            break;
-        case 'transparent':
-            $(header).addClass('header--transparent');
-            break;
-        case 'default':
-            $(header).addClass('header--transparent');
-            $(header).removeClass('header--transparent').removeClass('header--whitout-studio-name').removeClass('header--white');
-            $('.mobile-toggle').removeClass('white');
-            break;
-        case 'white':
-            $(header).addClass('header--white').removeClass('header--whitout-studio-name');
-
-            break;
-    }
-}
-
-function difficultHomeHeaderLogic(scrollTop) {
-    var operaFixValue = 2;
-    if (scrollTop === 0) {
-        headerSetState('no-name');
-    } else if ((scrollTop > 0) && (scrollTop < window.innerHeight)) {
-        headerSetState('transparent');
-    // } else if ((scrollTop >= $('body').height() - window.innerHeight - operaFixValue)) {
-    //     headerSetState('white');
-    } else {
-        headerSetState('default');
-    }
-}
-
-function defaultHeaderLogic(scrollTop) {
-    if ((scrollTop >= $('html').height() - window.innerHeight) || (inBlackArea(scrollTop))) {
-        headerSetState('white');
-    } else {
-        headerSetState('default');
-    }
-}
 
 function initForm() {
     if ($('.hire-form-wrapper').length > 0) {
@@ -199,69 +135,30 @@ function initEvents() {
     if ($('.home').length > 0) {
         initHeaderBlockParalax(".hero-section__paralax-block");
 
-        $(document).ready(function() {
-            difficultHomeHeaderLogic($(window).scrollTop());
-        });
 
-        $(window).load(function() {
-            initPagination();
-            if ($(".project-article").length > 0) {
-                $(".project-article").stick_in_parent();
-            }
-        });
 
-        $(window).scroll(function() {
-            difficultHomeHeaderLogic($(window).scrollTop());
-        });
 
     } else {
         initForm();
-        initBlackAreaList();
 
-        $(document).ready(function() {
-            defaultHeaderLogic($(window).scrollTop());
-        });
-        $(window).scroll(function() {
-            defaultHeaderLogic($(window).scrollTop());
-        });
-        $(window).resize(function() {
-            initBlackAreaList();
-            defaultHeaderLogic($(window).scrollTop());
-        });
     }
 
     // initHeaderColoring();
 }
 
-function initHeaderColoring() {
-    var darkArea = $('.is-dark-area');
-    var darkAreaTop = darkArea.offset().top;
-    var darkAreaBottom = darkArea.height();
 
-    $(window).scroll(function(event) {
-        var scroll = $(window).scrollTop();
-
-        if(darkArea.length>0) {
-            if(scroll>= darkAreaTop && scroll<=darkAreaBottom) {
-                console.log('white');
-                headerSetState('white');
-            }
-        }
-
-    }).scroll();
-}
 
 initEvents();
 
 
 
 // Hard code for map marker animation
-$(window).scroll(function(event) {
-    scroll = $(window).scrollTop();
-    if ( scroll+50 >= $('#map2').offset().top && scroll <= $('#map2').offset().top + $('#map2').innerHeight() ) {
-        $('.marker-label').addClass('animate')
-    }
-    else {
-        $('.marker-label').removeClass('animate')
-    }
-});
+// $(window).scroll(function(event) {
+//     scroll = $(window).scrollTop();
+//     if ( scroll+50 >= $('#map2').offset().top && scroll <= $('#map2').offset().top + $('#map2').innerHeight() ) {
+//         $('.marker-label').addClass('animate')
+//     }
+//     else {
+//         $('.marker-label').removeClass('animate')
+//     }
+// });
