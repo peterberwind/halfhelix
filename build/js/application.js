@@ -128,10 +128,24 @@ function videoMobilePause() {
 }
 
 
+function colorHeader() {
+    $(window).scroll(function(event) {
+        var scroll = $(this).scrollTop();
+        var scrollColor = $('.hero-section').height();
+        if (scroll>=scrollColor) {
+            $('.header').addClass('header-dark');
+        }
+        else {
+            $('.header').removeClass('header-dark');
+        }
+    });
+}
+
 function initEvents() {
     initAllAnchor('.anchor-js');
     videoMobilePause();
     initMenuToggle();
+    colorHeader();
     if ($('.home').length > 0) {
         initHeaderBlockParalax(".hero-section__paralax-block");
 
@@ -145,6 +159,7 @@ function initEvents() {
 
     // initHeaderColoring();
 }
+
 
 
 

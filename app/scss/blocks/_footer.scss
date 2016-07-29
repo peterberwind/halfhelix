@@ -41,13 +41,14 @@
       font-size: rem(16);
       padding: 10px 0 20px 0;
       text-transform: uppercase;
-      font-family: $ff-bold;
     }
 
     &-input {
       display: flex;
       flex-direction: row;
-
+      input[type="text"] {
+        @include placeholder-color($blue);
+      }
       input[type="submit"] {
         flex-basis: 30%;
       }
@@ -60,7 +61,7 @@
       li {
         display: inline;
         text-align: center;
-        margin: 0 10px;
+        margin: 0 5vw;
         border-bottom: 1px solid $dark-grey;
         padding-bottom: 1px;
       }
