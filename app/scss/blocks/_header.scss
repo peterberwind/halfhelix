@@ -1,8 +1,6 @@
 .header {
     position: fixed;
     z-index: 600;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
     padding: 20px 24px;
@@ -10,13 +8,16 @@
     background: transparent;
     border-bottom: 1px solid transparent;
     transition: 0.6s;
-
+    
+    @include breakpoint(extra-small) {
+        padding: 10px 20px;
+    }
     
     .header__studio-name {
         color: #fff;
         font-family: $ff-base;
         transition: 0.6s;
-        
+        float: left;
         .home & {
             opacity: 0;
         }
@@ -37,7 +38,7 @@
 
     .header__nav {
         width: 450px;
-
+        float: right;
         ul {
             display: flex;
             justify-content: space-between;
@@ -45,9 +46,7 @@
             padding: 0;
             list-style: none;
 
-            @include breakpoint(small) {
-                padding: 15px 5px;
-            }
+
 
             a {
                 transition-duration: 0.6s;

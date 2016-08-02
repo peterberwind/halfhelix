@@ -11,7 +11,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 90%;
+        max-width: 90%;
+        max-height: 90%;
         position: absolute;
         z-index: 1;
         g, text, path {
@@ -63,16 +64,19 @@
         z-index: 200;
         font-style: normal;
         text-decoration: underline;
+        letter-spacing: 0.075rem;
         @include breakpoint(extra-small) {
-
-            left: 10px;
+            left: 20px;
+            top: 10px;
         }
         &:hover {
             text-decoration: line-through;
         }
         a {
           padding: 0;
-
+          @include breakpoint(small) {
+            font-size: rem(14)
+          }
           @include breakpoint(extra-small) {
             font-size: rem(14)
           }
@@ -105,7 +109,12 @@
           letter-spacing: rem(8);
           margin-bottom: 0em;
           font-weight: bold;
-
+          @include breakpoint(small) {
+            font-size: rem(110);
+          }
+          @include breakpoint(extra-small) {
+            font-size: 11vw;
+          }
           .page & {
             font-family: $ff-serif;
             font-weight: normal;

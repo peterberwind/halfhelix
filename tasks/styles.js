@@ -5,21 +5,18 @@ var gulp = require('gulp'),
     config = require('./config'),
     gulpIf = require('gulp-if'),
     gulploadPlugins = require('gulp-load-plugins'),
+    errorNotifier = require('gulp-error-notifier'),
     autoprefixer = require('gulp-autoprefixer');
 
 var plugins = gulploadPlugins();
 var config = require('./config');
 
-var callback = function (err) {
-    console.log(config.notify.error('\n--------- SASS file has error clear it to see changes, check the log below -------------\n'));
-    console.log(err);
-};
 
 gulp.task('sass', function () {
 
     console.log(config.notify.update('\n--------- Running SASS tasks -------------------------------------------'));
     return gulp.src(['app/scss/master.scss'])
-        .pipe(plugins.sass({ onError: callback }))
+        .pipe(errorNotifier.handleError(plugins.sass()))
         .pipe(plugins.size())
         .pipe(gulp.dest(config.source.css));
 });

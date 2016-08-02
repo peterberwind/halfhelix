@@ -10,18 +10,39 @@
     display: flex;
     margin-bottom: $vertical-spacing;
     height: 500px;
+    @include breakpoint(small) {
+      height: 70vh;
+      position: relative;
+      display: block;
+    }
+    @include breakpoint(extra-small) {
+      // height: 50vh;
+      height: 600px;
+      position: relative;
+      display: block;
+    }
   }
 
   &-image {
     flex-basis: 60%;
     height: 100%;
     background: $blue;
-
     img {
       height: 500px;
       width: 100%;
       object-fit: cover;
     }
+    @include breakpoint(small) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      img {
+        height: 100%;
+      }
+    }
+
   }
 
   &-text {
@@ -49,6 +70,16 @@
       margin: rem(20) 0 rem(20) 0;
       font-size: rem(14);
     }
+
+    @include breakpoint(small) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background: rgba($light-grey, 0.75);
+    }
   }
 
   &-half {
@@ -75,7 +106,7 @@
 
 .tile-list {
   padding: 120px 0 60px 0;
-
+  
   &__more {
     display: flex;
     justify-content: center;
@@ -91,10 +122,16 @@
     &-list {
       padding: 50px;
       background: $light-grey;
+      @include breakpoint(small) {
+        padding: 24px;
+      }
     }
     &-row {
       min-height: 768px;
       margin-bottom: 15vh;
+      @include breakpoint(extra-small) {
+        min-height: 600px;
+      }
     }
     &-image {
       background: #fff;
@@ -132,11 +169,14 @@
       h3 {
         margin-bottom: 35px;
         white-space: nowrap;
+        @include breakpoint(extra-small) {
+            font-size: 7vmin
+        }
         a {
           color: $blue;
-          border-bottom: 0.65rem solid $blue;
+          border-bottom: 0.2em solid $blue;
+          padding-bottom: 0.1em;
           line-height: 1.75;
-
         }
       }
       .btn-link {

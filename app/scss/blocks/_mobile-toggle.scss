@@ -1,7 +1,7 @@
 .mobile-toggle {
 	position: fixed;
-	top: 11px;
-	right: 10px;
+	top: 10px;
+	right: 20px;
 	width: 20px;
 	height: 32px;
 	z-index: 999;
@@ -11,23 +11,26 @@
 	span {
 		width: 20px;
 		height: 2px;
-		background: #000;
+		background: #fff;
 		margin-top: 5px;
 		display: block;
 		transition: 0.33s transform;
+		.header-dark & {background: $dark-grey;}
 	}
 	&.open {
+		top: 17px;
+		span {background: $dark-grey}
 		span:nth-child(1) {
 			transform: rotate(-45deg);
 			position: absolute;
-			right: 10px;
-			top: 15px;
+			right: 0;
+			top: 0;
 		}
 		span:nth-child(2) {
 			transform: rotate(45deg);
 			position: absolute;
-			right: 10px;
-			top: 15px;
+			right: 0;
+			top: 0;
 		}
 		span:nth-child(3) {
 			transform: scale(0);
