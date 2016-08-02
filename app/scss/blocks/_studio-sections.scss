@@ -1,24 +1,25 @@
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 
 .studio-section {
-  padding: 100px;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include breakpoint(small) {
-      padding: 50px;
+      padding: 50px 0;
   }
   @include breakpoint(extra-small) {
-      padding: 40px 10px;
+      padding: 40px 0;
   }
   h1 {
-    font-size: rem(45);
+    margin-bottom: 0.5em;
+    font-size: rem(60);
     text-align: center;
     font-family: $ff-serif;
     font-style: normal;
+    @include breakpoint(extra-small) {
+        font-size: 7vmax;
+    }
   }
 
 
@@ -28,14 +29,16 @@
   background-color: #F2F2F2;
   .img-wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 80px;
     @include breakpoint(small) {
         flex-direction: column;
     }
   }
   .what-we-do__item {
     text-align: center;
+    flex-basis: 20%;
     @include breakpoint(small) {
         & + .what-we-do__item {
           margin-top: 5vh;
@@ -44,87 +47,67 @@
     img {
       padding: 20px 8%;
     }
+    h2 {
+      font-size: rem(24);
+    }
+    p {
+      color: #222222;
+      font-size: rem(14);
+    }
   }
 }
 
 // How We Do it
-&.principles {
+.principles {
 
-  &__wrapper {
-    margin: 0 auto;
-    padding-top: 50px;
-  }
-
-  &__row {
-    width: 100%;
-    padding-bottom: $vertical-spacing;
-    @include clearfix;
-    @include breakpoint(small) {
-      &+& {
-        // margin-top: 50px;
-      }
+    .tile-row {
+        height: 370px;
     }
-    &:nth-child(2n+1) {
-      .how-we-do-it__text {
-        float: right;
-        @include breakpoint(small) {
-          float: none;
+    .tile-image {
+        flex-basis: 45%;
+    }
+    .tile-text {
+        flex-basis: 55%;
+        text-align: left;
+        align-items: flex-start;
+        h3 {
+          margin-bottom: 0.25em;
+          padding-bottom: 0.12em;
+          color: #181818;
+          border-bottom: 0.2em solid $blue;
+          font-size:  rem(32);
         }
+        p {
+          font-size: rem(18);
+        }
+    }
+    @include breakpoint(small) {
+      .tile-row {
+        display: flex;
+        height: 70vmax;
+        flex-direction: column;
+      }
+      .tile-image {
+        order: 2;
+        position: static; 
+      }
+      .tile-text {
+        order: 1;
+        position: static;
+        padding: 0 24px;
       }
     }
-  }
-
-  &__text {
-    background-color: #F2F2F2;
-    height: 450px;
-    padding: 0 50px 0;
-    text-align: left;
-    box-sizing: border-box;
-    float: left;
-    display: flex;
-    flex-basis: 50%;
-    justify-content: center;
-    flex-direction: column;
-    @include breakpoint(small) {
-        width: auto;
-        float: none;
-    }
     @include breakpoint(extra-small) {
-      padding: 20px 10px;
-      height: auto;
-    }
-    h3 {
-      font-family: $ff-bold;
-      font-size: rem(26);
-      font-style: normal;
-      margin-bottom: 0;
-    }
-    p {
-      margin: 1em 0 0 0;
-    }
+      .tile-row {
+        height: auto;
+      }
+      .tile-image {
+        height: 100vmin;
+      }
+      .tile-text {
+        padding: 20px;
+      }
 
-  }
-
-  &__image {
-    background-color: $blue;
-    float: left;
-    height: 450px;
-    box-sizing: border-box;
-    display: flex;
-    flex-basis: auto;
-    justify-content: center;
-    align-items: center;
-    @include breakpoint(small) {
-        width: auto;
-        float: none;
     }
-    @include breakpoint(extra-small) {
-      height: auto;
-    }
-    img {
-      max-height: 100%;
-      max-width: 100%;
-    }
-  }
 
 }

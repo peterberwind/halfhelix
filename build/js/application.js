@@ -146,15 +146,10 @@ function initEvents() {
     videoMobilePause();
     initMenuToggle();
     colorHeader();
+    initHeaderBlockParalax(".hero-section__paralax-block");
     if ($('.home').length > 0) {
-        initHeaderBlockParalax(".hero-section__paralax-block");
-
-
-
-
     } else {
         initForm();
-
     }
 
     // initHeaderColoring();
