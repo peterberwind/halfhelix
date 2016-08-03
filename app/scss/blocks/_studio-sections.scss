@@ -38,8 +38,12 @@
   }
   .what-we-do__item {
     text-align: center;
+    min-width: 320px;
+    padding: 0 50px;
     flex-basis: 20%;
     @include breakpoint(small) {
+        padding: 0;
+        min-width: 0;
         & + .what-we-do__item {
           margin-top: 5vh;
         }

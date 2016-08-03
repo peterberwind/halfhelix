@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: $vertical-spacing;
+  @include breakpoint(small) {
+    display: block; 
+  }
 }
 
 .tile {
@@ -58,17 +61,34 @@
 
     .btn {
       margin-top: 20px;
+      font-size:  rem(12);
+      padding: 10px 30px;
+      span {
+        margin-left: 2em;
+      }
     }
 
     h3 {
       font-family: $ff-serif;
-      font-size: rem(45);
+      font-size: rem(48);
       margin: 0;
-      padding-bottom: 20px;
+      padding-bottom: 0.4em;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 40%;
+        position: absolute;
+        height: 0.14em;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: $dark-grey;
+      }
     }
     p {
       margin: rem(20) 0 rem(20) 0;
-      font-size: rem(14);
+      font-size: rem(12);
     }
 
     @include breakpoint(small) {
@@ -86,6 +106,10 @@
     width: 48%;
     display: flex;
     flex-direction: column;
+    @include breakpoint(small) {
+      flex-basis: 100%;
+      width: 100%;
+    }
   }
 
   &-title {
@@ -105,12 +129,17 @@
 }
 
 .tile-list {
-  padding: 120px 0 60px 0;
-  
+  padding: 80px 0 60px 0;
+  @include breakpoint(extra-small) {
+    // padding-top: 80px;  
+  }
   &__more {
     display: flex;
     justify-content: center;
     padding: $vertical-spacing 0;
+    .btn {
+      font-size: rem(12);
+    }
   }
 }
 
@@ -186,4 +215,9 @@
 
     }
   }
+}
+
+
+.hidden-projects {
+  display: none;
 }

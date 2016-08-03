@@ -141,11 +141,24 @@ function colorHeader() {
     });
 }
 
+function showProjects() {
+    var total = $('.hidden-projects').length;
+    var count = 1;
+    $('#showProjects').click(function(event) {
+        $('.hidden-projects').eq(count-1).fadeIn(500);
+        count++;
+        if (count==total+1) {
+            $(this).remove();
+        }
+    });
+}
+
 function initEvents() {
     initAllAnchor('.anchor-js');
     videoMobilePause();
     initMenuToggle();
     colorHeader();
+    showProjects();
     initHeaderBlockParalax(".hero-section__paralax-block");
     if ($('.home').length > 0) {
     } else {
