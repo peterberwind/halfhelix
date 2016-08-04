@@ -3,7 +3,10 @@
 
     position: relative;
     text-align: center;
-
+    h1 {
+        font-size: rem(80);
+        font-family: $ff-serif;
+    }
     h2 {
         margin-bottom: 1em;
         font-family: $ff-serif;

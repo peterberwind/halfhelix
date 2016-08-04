@@ -29,6 +29,17 @@
     background-color: transparent;
     color: $blue;
   }
+  
+  &.transparent {
+    border: 3px solid #fff;
+    background-color: transparent;
+    letter-spacing: 0.075em;1
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+
 }
 
 .white {
@@ -46,3 +57,5 @@
   color: $dark-grey;
   border-bottom: 0.4em solid $blue;
 }
+
+

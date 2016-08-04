@@ -36,10 +36,8 @@ MASTER: IMPORTING STYLESHEETS
 @import "blocks/anchor";
 @import "blocks/slogan-section";
 @import "blocks/footer";
-@import "blocks/project-article";
 @import "blocks/tile-list";
 @import "blocks/number-widget";
-@import "blocks/project-widget";
 @import "blocks/mac-book";
 @import "blocks/big-picture";
 @import "blocks/summary";
@@ -56,6 +54,11 @@ MASTER: IMPORTING STYLESHEETS
 @import "blocks/spheres";
 @import "blocks/mobile-toggle";
 @import "blocks/studio-sections";
+
+
+// Pages
+@import "pages/case-study";
+
 
 // Layouts
 @import "layouts/layout-helpers"

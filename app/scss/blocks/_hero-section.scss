@@ -4,6 +4,11 @@
     overflow: hidden;
     background-image: linear-gradient(123deg, #6dabf3, #3b73e2);
     color: #fff;
+    position: relative;
+    figure {
+      margin: 0;
+      height: 100%;
+    }
 
     .home & {
       position: relative;
@@ -109,16 +114,16 @@
           letter-spacing: rem(8);
           margin-bottom: 0em;
           font-weight: bold;
+          font-family: $ff-serif;
+          font-weight: normal;
+
           @include breakpoint(small) {
             font-size: rem(110);
           }
           @include breakpoint(extra-small) {
             font-size: 11vw;
           }
-          .page & {
-            font-family: $ff-serif;
-            font-weight: normal;
-          }
+
 
            .third & {
              font-size: rem(50);

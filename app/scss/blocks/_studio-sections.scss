@@ -80,6 +80,9 @@
           color: #181818;
           border-bottom: 0.2em solid $blue;
           font-size:  rem(32);
+          &:after {
+            display: none;
+          }
         }
         p {
           font-size: rem(18);

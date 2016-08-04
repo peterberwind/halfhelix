@@ -1,30 +1,15 @@
-.call-to-action {
-	background: $bg-color-secondary;
-	margin-top: 100px;
-	font-family: Apercu-Medium;
-	height: 175px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0 24px;
-	@include breakpoint(extra-small) {
-	    height: 80px;
-	}
-}
-
-.call-to-action__title {
-	margin-bottom: 0;
-	font-size: rem(24);
-	line-height: 1;
-	letter-spacing: 0.4em;
-	font-family: $ff-base;
-	@include breakpoint(small) {
-	    letter-spacing: 0.125em;
+.click-to-action {
+	background: $blue;
+	text-align: center;
+	padding: 60px 24px;
+	.btn {
+		padding: 10px 20px;
+		max-width: 300px;
 	}
 	@include breakpoint(extra-small) {
-	    font-size: 3.75vw;
-	    letter-spacing: 0.05em;
-	    font-family: $ff-bold;
+		padding: 40px 20px;
+		.btn {
+			font-size: rem(12);
+		}
 	}
 }
