@@ -11,13 +11,15 @@
 
 .case-header {
     figure {
+      margin: 0;
+      height: 100%;
       position: relative;
     }
     .hero-section__banner {
 
       h1 {
         font-size: rem(80);
-        letter-spacing: 0.085em;
+        letter-spacing: rem(8);
       }
       p {
         margin-top: 2em;

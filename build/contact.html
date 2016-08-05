@@ -45,31 +45,29 @@
 </header>
 
   <!-- Header -->
-  <div class="hero-section third studio-header">
-    <div class="hero-section__paralax-block third">
-      <figure class="hero-section__banner">
-        <figcaption>
-          <h1 class="large">Get In Touch:</h1>
-        </figcaption>
-        <h1>
-          <a href="#">Hello@halfhelix.com</a>
-        </h1>
-      </figure>
-  </div>
+  <section class="hero-section" id="top-anchor-target">
+   <figure>
+     <figcaption class="hero-section__banner">
+       <h1>Get In Touch:</h1>
+       <p><a href="mailto:Hello@halfhelix.com">Hello@halfhelix.com</a></p>
+     </figcaption>
+   </figure>
+  </section>
 
-    <section class="contact-section">
-      <div class="map-widget" id="map2">
-
-      </div>
-      <div class="contact-section__text text-center">
-        <h3>New York City</h3>
-        <p>72 Allen Street</p>
-        <p>3rd Floor</p>
-        <p>Lower East Side</p>
-        <p>New York City, NY 10002</p>
-      </div>
+   <section class="contact-section"> 
+      <div class="data-map" data-zoom='15' data-cord="40.715053, -74.002844"></div> 
+      <div class="data-pointmarker" data-cord="40.717624, -73.993729"></div> 
+      <div class="map-widget" id="map"> 
+      
+      </div> 
+      <div class="contact-section__text text-center"> 
+        <h3>New York City</h3> 
+        <p>72 Allen Street</p> 
+        <p>3rd Floor</p> 
+        <p>Lower East Side</p> 
+        <p>New York City, NY 10002</p> 
+      </div> 
     </section>
-  </main>
 
   <footer class="footer">
   <div class="container footer-contact">
@@ -120,6 +118,7 @@
 </footer>
 
   <script src="js/bower.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script> 
 <script src="js/application.js"></script>
 
 

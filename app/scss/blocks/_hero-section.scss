@@ -5,10 +5,7 @@
     background-image: linear-gradient(123deg, #6dabf3, #3b73e2);
     color: #fff;
     position: relative;
-    figure {
-      margin: 0;
-      height: 100%;
-    }
+
 
     .home & {
       position: relative;
@@ -111,7 +108,6 @@
           font-family: $ff-base;
           color: $white;
           font-style: normal;
-          letter-spacing: rem(8);
           margin-bottom: 0em;
           font-weight: bold;
           font-family: $ff-serif;

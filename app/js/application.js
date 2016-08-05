@@ -176,12 +176,12 @@ initEvents();
 
 
 // Hard code for map marker animation
-// $(window).scroll(function(event) {
-//     scroll = $(window).scrollTop();
-//     if ( scroll+50 >= $('#map2').offset().top && scroll <= $('#map2').offset().top + $('#map2').innerHeight() ) {
-//         $('.marker-label').addClass('animate')
-//     }
-//     else {
-//         $('.marker-label').removeClass('animate')
-//     }
-// });
+$(window).scroll(function(event) {
+    scroll = $(window).scrollTop();
+    if ( scroll+50 >= $('#map').offset().top && scroll <= $('#map').offset().top + $('#map').innerHeight() ) {
+        $('.marker-label').addClass('animate')
+    }
+    else {
+        $('.marker-label').removeClass('animate')
+    }
+});
