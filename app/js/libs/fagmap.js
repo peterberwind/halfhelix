@@ -229,23 +229,23 @@ function initMap(mapId, markerIconURL) {
 $(document).ready( 
     function() { 
  
-        if($('#map').length>0) { 
-            initMap('map', 'images/marker.png'); 
-        } 
+        // if($('#map').length>0) { 
+        //     initMap('map', 'images/marker.png'); 
+        // } 
  
-        if($('#map2').length>0) { 
+        if($('#map').length>0) { 
  
             function init() { 
  
               var mapOptions = { 
-                  zoom: 16, 
+                  zoom: 14, 
                   center: new google.maps.LatLng(40.7175099, -73.9909217), 
                   mapTypeId: google.maps.MapTypeId.ROADMAP, 
                   disableDefaultUI: true, 
                   styles: map.themes.lightGray 
               }; 
  
-              var myMap = new google.maps.Map(document.getElementById('map2'), mapOptions); 
+              var myMap = new google.maps.Map(document.getElementById('map'), mapOptions); 
  
               var marker = new MarkerWithLabel({ 
                 position: myMap.getCenter(), 

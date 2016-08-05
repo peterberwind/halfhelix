@@ -1120,13 +1120,18 @@ hr {
 
 .contact .hero-section__banner h1 {
   font-size: 5rem; }
+  @media (max-width: 991px) {
+    .contact .hero-section__banner h1 {
+      font-size: 2.8125rem; } }
 
-.contact .hero-section__banner p {
-  font-size: 2.5rem; }
-  .contact .hero-section__banner p a {
-    font-family: "Moderat-Bold", sans-serif;
-    line-height: 1.75;
-    border-bottom: 2px solid #fff; }
+.contact .hero-section__banner p a {
+  font-size: 2.5rem;
+  font-family: "Moderat-Bold", sans-serif;
+  line-height: 1.75;
+  border-bottom: 2px solid #fff; }
+  @media (max-width: 991px) {
+    .contact .hero-section__banner p a {
+      font-size: 1.375rem; } }
 
 .contact-info {
   position: fixed;
@@ -1146,16 +1151,14 @@ hr {
     font-size: 1.875rem;
     letter-spacing: 0; }
 
-.contact-section {
-  margin: 0 -24px; }
-  .contact-section::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .contact-section .map-widget {
-    width: 50%;
-    float: left;
-    z-index: -1; }
+.contact-section::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.contact-section .map-widget {
+  width: 50%;
+  float: left; }
 
 .contact-section__text {
   float: right;
@@ -1167,30 +1170,31 @@ hr {
   background-color: #fff; }
   .contact-section__text h3 {
     margin-bottom: 1.5em;
-    letter-spacing: 0;
-    font-family: "Moderat-Regular", sans-serif; }
+    letter-spacing: 0.125em;
+    font-family: "Moderat-Regular", sans-serif;
+    font-size: 1.5rem;
+    color: #181818; }
   .contact-section__text p {
     font-family: "Moderat-Regular", sans-serif;
     margin-bottom: 0;
-    color: #181818; }
+    color: #181818;
+    font-size: 1.125rem; }
 
 @media (max-width: 991px) {
-  .contact-section {
-    margin: 0 -10px; }
-    .contact-section .map-widget, .contact-section .contact-section__text {
-      float: none;
-      width: 100%; } }
+  .contact-section .map-widget, .contact-section .contact-section__text {
+    float: none;
+    width: 100%; } }
 
 .marker-label {
-  border: 3px solid #004EDD;
-  width: 85px;
-  height: 85px;
+  border: 2px solid #3B73E2;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   position: relative;
   box-sizing: border-box; }
   .marker-label.animate {
     animation: pulse 1s ease 3; }
-  .marker-label:before, .marker-label:after {
+  .marker-label:after {
     content: "";
     display: block;
     position: absolute;
@@ -1199,15 +1203,10 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box; }
-  .marker-label:before {
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    border: 3px solid #004EDD; }
   .marker-label:after {
-    width: 16px;
-    height: 16px;
-    background: #004EDD; }
+    width: 22px;
+    height: 22px;
+    background: #3B73E2; }
 
 @keyframes pulse {
   40% {
