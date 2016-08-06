@@ -229,9 +229,7 @@ function initMap(mapId, markerIconURL) {
 $(document).ready( 
     function() { 
  
-        // if($('#map').length>0) { 
-        //     initMap('map', 'images/marker.png'); 
-        // } 
+
  
         if($('#map').length>0) { 
  

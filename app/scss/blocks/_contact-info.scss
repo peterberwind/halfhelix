@@ -1,23 +1,4 @@
-.contact {
-    .hero-section__banner h1 {
-        font-size: rem(80);
 
-        @include breakpoint(small) {
-            font-size: rem(45);
-        }
-    }
-    .hero-section__banner p {
-        a {
-            font-size: rem(40);
-            font-family: $ff-bold;
-            line-height: 1.75;
-            border-bottom: 2px solid #fff;
-            @include breakpoint(small) {
-                font-size: rem(22);
-            }
-        }
-    }
-}
 
 .contact-info {
     position: fixed;
