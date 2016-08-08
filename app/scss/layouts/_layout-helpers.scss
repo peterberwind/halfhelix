@@ -18,11 +18,8 @@
     text-align: center;
     @include breakpoint(small) {
         width: auto;
-        padding: 0 24px;
     }
-    @include breakpoint(extra-small) {
-        padding: 0 20px;
-    }
+
 
 }
 
@@ -30,9 +27,7 @@
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    @include breakpoint(extra-small) {
-      min-height: 0;
-    }
+
 }
 
 .half-screen-section {

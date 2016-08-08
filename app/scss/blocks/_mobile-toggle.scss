@@ -6,7 +6,7 @@
 	height: 32px;
 	z-index: 999;
 	display: none;
-
+	
 
 	span {
 		width: 20px;
@@ -49,5 +49,6 @@
 
 	@include breakpoint(extra-small) {
 		display: block;
+		right: 25px;
 	}
 }

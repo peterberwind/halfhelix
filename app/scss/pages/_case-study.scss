@@ -57,7 +57,7 @@
 }
 
 .case-section {
-  padding: 60px 24px;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,6 +69,6 @@
     color: $blue;
   }
   @include breakpoint(extra-small) {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }

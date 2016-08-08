@@ -547,6 +547,9 @@ hr {
     .content-wrapper {
       margin: 0 10px; } }
 
+main {
+  padding: 0 24px; }
+
 .header {
   position: fixed;
   z-index: 600;
@@ -909,11 +912,6 @@ hr {
       height: 70vh;
       position: relative;
       display: block; } }
-  @media (max-width: 767px) {
-    .tile-row {
-      height: 600px;
-      position: relative;
-      display: block; } }
 
 .tile-image {
   flex-basis: 60%;
@@ -928,10 +926,7 @@ hr {
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 100%; }
-      .tile-image img {
-        height: 100%; } }
+      width: 100%; } }
 
 .tile-text {
   flex-basis: 40%;
@@ -970,12 +965,8 @@ hr {
     font-size: 0.75rem; }
   @media (max-width: 991px) {
     .tile-text {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 1;
+      position: relative;
+      z-index: 2;
       background: rgba(246, 246, 246, 0.75); } }
 
 .tile-half {
@@ -1007,22 +998,20 @@ hr {
       font-size: 0.75rem; }
 
 .home .tile-list {
-  padding: 50px;
+  padding: 50px 0;
   background: #fff; }
-  @media (max-width: 991px) {
-    .home .tile-list {
-      padding: 24px; } }
 
 .home .tile-row {
   min-height: 768px;
   margin-bottom: 15vh; }
   @media (max-width: 767px) {
     .home .tile-row {
-      min-height: 600px; } }
+      min-height: 0;
+      height: auto; } }
 
 .home .tile-image {
   background: #fff;
-  padding: 35px;
+  padding: 0;
   flex-basis: 70%; }
   .home .tile-image img {
     width: 100%;
@@ -1030,29 +1019,39 @@ hr {
     display: block; }
 
 .home .tile-text {
-  padding: 0;
-  padding-right: 30px;
-  padding-top: 35px;
+  padding: 30px;
+  padding-left: 0;
   flex-basis: 30%;
-  min-width: 0;
+  min-width: 600px;
   text-align: inherit;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  position: relative;
   z-index: 2;
-  background-color: #fff; }
+  background: #fff; }
   .home .tile-text.right {
     padding-right: 0;
     padding-left: 30px;
     align-items: flex-end;
     text-align: right; }
+  @media (max-width: 991px) {
+    .home .tile-text {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding-left: 30px; }
+      .home .tile-text.right {
+        padding-right: 30px; } }
+  @media (max-width: 767px) {
+    .home .tile-text {
+      min-width: 0;
+      padding: 20px; }
+      .home .tile-text.right {
+        padding: 20px; } }
   .home .tile-text .client {
     margin: 0;
     font-size: 1.2rem;
     font-family: "Moderat-Bold", sans-serif; }
   .home .tile-text h3 {
-    white-space: nowrap; }
+    font-size: 4vmin; }
     @media (max-width: 767px) {
       .home .tile-text h3 {
         font-size: 7vmin; } }
@@ -1491,7 +1490,8 @@ input[type="submit"] {
     background: #fff; }
   @media (max-width: 767px) {
     .mobile-toggle {
-      display: block; } }
+      display: block;
+      right: 25px; } }
 
 .studio-section {
   padding: 80px 0;
@@ -1633,7 +1633,7 @@ input[type="submit"] {
       width: 95vw; } }
 
 .case-section {
-  padding: 60px 24px;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -1644,7 +1644,7 @@ input[type="submit"] {
     color: #3B73E2; }
   @media (max-width: 767px) {
     .case-section {
-      padding: 40px 20px; } }
+      padding: 40px 0; } }
 
 .careers .hero-section__banner h1 {
   letter-spacing: 0.08375em; }
@@ -1763,19 +1763,12 @@ input[type="submit"] {
   text-align: center; }
   @media (max-width: 991px) {
     .center-narrow {
-      width: auto;
-      padding: 0 24px; } }
-  @media (max-width: 767px) {
-    .center-narrow {
-      padding: 0 20px; } }
+      width: auto; } }
 
 .full-screen-section, .hero-section, .hero-section__paralax-block, .slogan-section, .map-widget {
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box; }
-  @media (max-width: 767px) {
-    .full-screen-section, .hero-section, .hero-section__paralax-block, .slogan-section, .map-widget {
-      min-height: 0; } }
 
 .half-screen-section {
   width: 100%;
