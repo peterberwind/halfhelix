@@ -918,7 +918,7 @@ main {
   height: 100%;
   background: #3B73E2; }
   .tile-image img {
-    height: 500px;
+    height: 100%;
     width: 100%;
     object-fit: cover; }
   @media (max-width: 991px) {
@@ -967,7 +967,9 @@ main {
     .tile-text {
       position: relative;
       z-index: 2;
-      background: rgba(246, 246, 246, 0.75); } }
+      background: rgba(246, 246, 246, 0.75); }
+      .tile-text p {
+        font-size: 1rem; } }
 
 .tile-half {
   width: 48%;
