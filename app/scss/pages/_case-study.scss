@@ -47,10 +47,13 @@
     }
 }
 
-
 .case-img {
   padding: 5% 7%;
   background: #fff;
+  width: 65vw;
+  @include breakpoint(extra-small) {
+    width: 95vw;
+  }
 }
 
 .case-section {

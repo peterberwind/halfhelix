@@ -1419,8 +1419,7 @@ input[type="submit"] {
   text-align: center;
   padding: 60px 24px; }
   .click-to-action .btn {
-    padding: 10px 20px;
-    max-width: 300px; }
+    padding: 10px 20px; }
   @media (max-width: 767px) {
     .click-to-action {
       padding: 40px 20px; }
@@ -1627,7 +1626,11 @@ input[type="submit"] {
 
 .case-img {
   padding: 5% 7%;
-  background: #fff; }
+  background: #fff;
+  width: 65vw; }
+  @media (max-width: 767px) {
+    .case-img {
+      width: 95vw; } }
 
 .case-section {
   padding: 60px 24px;
@@ -1770,6 +1773,9 @@ input[type="submit"] {
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box; }
+  @media (max-width: 767px) {
+    .full-screen-section, .hero-section, .hero-section__paralax-block, .slogan-section, .map-widget {
+      min-height: 0; } }
 
 .half-screen-section {
   width: 100%;
