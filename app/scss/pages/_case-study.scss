@@ -1,11 +1,17 @@
 .case-study {
   .hero-section {
     background: transparent;
-    height: auto;
-    min-height: 0;
   }
   main {
     background: $light-grey;
+  }
+  .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -13,7 +19,10 @@
     figure {
       margin: 0;
       height: 100%;
-      position: relative;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .hero-section__banner {
 

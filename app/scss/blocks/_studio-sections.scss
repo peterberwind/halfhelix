@@ -27,13 +27,18 @@
 // What We Do
 &.what-we-do {
   background-color: #F2F2F2;
+  @include breakpoint(small) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .img-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     padding-top: 80px;
     @include breakpoint(small) {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
   .what-we-do__item {
@@ -101,7 +106,6 @@
       .tile-text {
         order: 1;
         position: static;
-        padding: 0 24px;
       }
     }
     @include breakpoint(extra-small) {
@@ -112,7 +116,7 @@
         height: 100vmin;
       }
       .tile-text {
-        padding: 20px;
+        padding: 15px;
       }
 
     }

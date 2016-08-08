@@ -144,8 +144,12 @@
       background: #fff;
     }
     &-row {
-      min-height: 768px;
+
       margin-bottom: 15vh;
+      @include breakpoint(extra-large) {
+        min-height: 768px;
+      }
+
       @include breakpoint(extra-small) {
         min-height: 0;
         height: auto;
@@ -179,6 +183,7 @@
         align-items: flex-end;
         text-align: right;
       }
+
       @include breakpoint(small) {
         background-color: rgba(255,255,255, 0.7);
         padding-left: 30px;
@@ -189,9 +194,9 @@
 
       @include breakpoint(extra-small) {
         min-width: 0;
-        padding: 20px;
+        padding: 30px 15px;
         &.right {
-          padding: 20px;
+          padding: 30px 15px;
         }
       }
       .client {

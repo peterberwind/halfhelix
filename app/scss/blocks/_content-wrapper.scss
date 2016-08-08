@@ -1,10 +1,13 @@
 .content-wrapper {
     margin: 0 24px;
     @include breakpoint(extra-small) {
-		margin: 0 10px;
+  		margin: 0 10px;
     }
 }
 
 main {
   padding: 0 24px;
+  @include breakpoint(extra-small) {
+    padding: 0 20px;
+  }
 }

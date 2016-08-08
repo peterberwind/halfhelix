@@ -548,6 +548,9 @@ hr {
 
 main {
   padding: 0 24px; }
+  @media (max-width: 767px) {
+    main {
+      padding: 0 20px; } }
 
 .header {
   position: fixed;
@@ -1029,8 +1032,10 @@ main {
   background: #fff; }
 
 .home .tile-row {
-  min-height: 768px;
   margin-bottom: 15vh; }
+  @media (min-width: 1600px) {
+    .home .tile-row {
+      min-height: 768px; } }
   @media (max-width: 767px) {
     .home .tile-row {
       min-height: 0;
@@ -1075,9 +1080,9 @@ main {
   @media (max-width: 767px) {
     .home .tile-text {
       min-width: 0;
-      padding: 20px; }
+      padding: 30px 15px; }
       .home .tile-text.right {
-        padding: 20px; } }
+        padding: 30px 15px; } }
   .home .tile-text .client {
     margin: 0;
     font-size: 1.2rem;
@@ -1533,8 +1538,7 @@ input[type="submit"] {
     background: #fff; }
   @media (max-width: 767px) {
     .mobile-toggle {
-      display: block;
-      right: 25px; } }
+      display: block; } }
 
 .studio-section {
   padding: 80px 0;
@@ -1562,6 +1566,10 @@ input[type="submit"] {
 
 .what-we-do {
   background-color: #F2F2F2; }
+  @media (max-width: 991px) {
+    .what-we-do {
+      padding-left: 15px;
+      padding-right: 15px; } }
   .what-we-do .img-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -1632,8 +1640,7 @@ input[type="submit"] {
   .principles .tile-text {
     -ms-flex-order: 1;
     order: 1;
-    position: static;
-    padding: 0 24px; } }
+    position: static; } }
 
 @media (max-width: 767px) {
   .principles .tile-row {
@@ -1641,20 +1648,29 @@ input[type="submit"] {
   .principles .tile-image {
     height: 100vmin; }
   .principles .tile-text {
-    padding: 20px; } }
+    padding: 15px; } }
 
 .case-study .hero-section {
-  background: transparent;
-  height: auto;
-  min-height: 0; }
+  background: transparent; }
 
 .case-study main {
   background: #F6F6F6; }
 
+.case-study .cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
 .case-header figure {
   margin: 0;
   height: 100%;
-  position: relative; }
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .case-header .hero-section__banner h1 {
   font-size: 5rem;
@@ -1735,6 +1751,10 @@ input[type="submit"] {
   border-bottom: 20px solid #3B73E2; }
   .vacancy-item p {
     font-size: 1.125rem; }
+  @media (max-width: 767px) {
+    .vacancy-item {
+      padding: 30px 15px 60px;
+      border-bottom-width: 15px; } }
 
 .vacancy-area {
   font-size: 1.125rem;
@@ -1757,16 +1777,12 @@ input[type="submit"] {
   padding: 80px 0; }
   .careers-perks h2 {
     font-family: "Caslon", sans-serif;
-    font-size: 3.75rem;
-    padding: 0 24px; }
+    font-size: 3.75rem; }
   .careers-perks p {
-    font-size: 1.125rem;
-    padding: 0 24px; }
+    font-size: 1.125rem; }
   @media (max-width: 767px) {
     .careers-perks h2 {
-      font-size: 2.5rem; }
-    .careers-perks h2, .careers-perks p {
-      padding: 0 20px; } }
+      font-size: 2.5rem; } }
 
 .perks-list {
   display: -ms-flexbox;
@@ -1800,6 +1816,10 @@ input[type="submit"] {
     color: #fff; }
   .perks-item:hover .perks-descr {
     opacity: 1; }
+  @media (max-width: 767px) {
+    .perks-item {
+      padding: 15px;
+      border-bottom-width: 15px; } }
 
 .perks-title {
   font-family: "Caslon", sans-serif;
@@ -1823,6 +1843,9 @@ input[type="submit"] {
   top: 0;
   transition: 0.33s;
   background: #3B73E2; }
+  @media (max-width: 767px) {
+    .perks-descr {
+      padding: 15px; } }
 
 @media (max-width: 991px) {
   .vacancy-item, .perks-item {
