@@ -71,9 +71,9 @@
     border-radius: 50%;
     position: relative;
     box-sizing: border-box;
-    &.animate {
-        animation: pulse 1s ease 3;
-    }
+    // &.animate {
+    //     animation: pulse 1s ease 3;
+    // }
     &:after {
         content: "";
         display: block;

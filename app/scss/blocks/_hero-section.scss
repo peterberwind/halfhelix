@@ -104,13 +104,13 @@
         }
 
         h1 {
-          font-size: rem(120);
+          font-size: rem(140);
           font-family: $ff-base;
           color: $white;
           font-style: normal;
           margin-bottom: 0em;
           font-weight: bold;
-          font-family: $ff-serif;
+          font-family: $ff-bold;
           font-weight: normal;
 
           @include breakpoint(small) {
@@ -138,7 +138,7 @@
         }
 
         h3 {
-            margin-bottom: rem(40);;
+            margin-bottom: rem(40);
             font-family: $ff-base;
             font-size: rem(20);
             font-style: normal;

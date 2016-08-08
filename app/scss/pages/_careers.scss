@@ -18,9 +18,10 @@
   flex-basis: 45%;
   padding: 30px 30px 60px;
   background: $light-grey;
-  letter-spacing: 0.2em;
+  // letter-spacing: 0.2em;
+  border-bottom: 20px solid $blue;
   p {
-    font-size: rem(14);
+    font-size: rem(18);
   }
 }
 
@@ -124,4 +125,4 @@
   .vacancy-item, .perks-item {
     flex-basis: 100%;
   }
-} 
+}
