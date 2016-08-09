@@ -1650,6 +1650,27 @@ input[type="submit"] {
   .principles .tile-text {
     padding: 15px; } }
 
+.preloader {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  padding: 0 30px; }
+  .preloader-visible .preloader {
+    display: -ms-flexbox;
+    display: flex; }
+
+.preloader-visible {
+  overflow-y: hidden; }
+
 .case-study .hero-section {
   background: transparent; }
 
