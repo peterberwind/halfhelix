@@ -1611,7 +1611,8 @@ input[type="submit"] {
     padding-top: 80px; }
     @media (max-width: 991px) {
       .what-we-do .img-wrapper {
-        display: block; } }
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .what-we-do .what-we-do__item {
     text-align: center;
     min-width: 320px;
@@ -1666,19 +1667,15 @@ input[type="submit"] {
   .principles .tile-image {
     -ms-flex-order: 2;
     order: 2;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
     position: static; }
   .principles .tile-text {
     -ms-flex-order: 1;
     order: 1;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
     position: static; } }
 
 @media (max-width: 767px) {
   .principles .tile-row {
-    height: 1000px; }
+    height: auto; }
   .principles .tile-image {
     height: 100vmin; }
   .principles .tile-text {

@@ -38,7 +38,7 @@
     align-items: baseline;
     padding-top: 80px;
     @include breakpoint(small) {
-      display: block;
+      flex-direction: column;
     }
   }
   .what-we-do__item {
@@ -101,18 +101,16 @@
       }
       .tile-image {
         order: 2;
-        flex-basis: 100%;
         position: static; 
       }
       .tile-text {
         order: 1;
-        flex-basis: 100%;
         position: static;
       }
     }
     @include breakpoint(extra-small) {
       .tile-row {
-        height: 1000px;
+        height: auto;
       }
       .tile-image {
         height: 100vmin;
