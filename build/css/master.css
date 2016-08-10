@@ -1573,8 +1573,6 @@ input[type="submit"] {
 
 .studio-section {
   padding: 80px 0;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-align: center;
