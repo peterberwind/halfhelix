@@ -104,11 +104,11 @@
         order: 2;
         position: static; 
         flex-basis: auto;
-        flex: 0 1 50%;
+        flex: 1 0 0%;
       }
       .tile-text {
-        flex-basis: 50%;
-        flex: 0 1 50%;
+        flex-basis: auto;
+        flex: 1 0 0%;
         order: 1;
         position: static;
       }
