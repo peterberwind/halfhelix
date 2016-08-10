@@ -1601,7 +1601,7 @@ input[type="submit"] {
 
 @media (max-width: 991px) {
   .principles .tile-row {
-    display: flex;
+    display: block;
     height: 70vmax;
     flex-direction: column; }
   .principles .tile-image {
