@@ -932,7 +932,9 @@ main {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; } }
+      width: 100%;
+      flex-basis: auto;
+      height: auto; } }
 
 .tile-text {
   flex-basis: 40%;
@@ -971,6 +973,8 @@ main {
     font-size: 0.75rem; }
   @media (max-width: 991px) {
     .tile-text {
+      flex-basis: auto;
+      height: auto;
       position: relative;
       z-index: 2;
       background: rgba(246, 246, 246, 0.75); }
@@ -1028,8 +1032,8 @@ main {
     .home .tile-image {
       position: static;
       flex-basis: auto;
-      order: 0;
-      height: auto; } }
+      height: auto;
+      order: 0; } }
   .home .tile-image img {
     width: 100%;
     height: auto;

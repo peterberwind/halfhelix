@@ -947,7 +947,10 @@ main {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; } }
+      width: 100%;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      height: auto; } }
 
 .tile-text {
   -ms-flex-preferred-size: 40%;
@@ -991,6 +994,9 @@ main {
     font-size: 0.75rem; }
   @media (max-width: 991px) {
     .tile-text {
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      height: auto;
       position: relative;
       z-index: 2;
       background: rgba(246, 246, 246, 0.75); }
@@ -1057,9 +1063,9 @@ main {
       position: static;
       -ms-flex-preferred-size: auto;
       flex-basis: auto;
+      height: auto;
       -ms-flex-order: 0;
-      order: 0;
-      height: auto; } }
+      order: 0; } }
   .home .tile-image img {
     width: 100%;
     height: auto;

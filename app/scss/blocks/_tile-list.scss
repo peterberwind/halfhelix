@@ -38,6 +38,8 @@
       top: 0;
       left: 0;
       width: 100%;
+      flex-basis: auto;
+      height: auto;
     }
 
   }
@@ -86,6 +88,8 @@
     }
 
     @include breakpoint(small) {
+      flex-basis: auto;
+      height: auto;
       position: relative;
       z-index: 2;
       background: rgba($light-grey, 0.75);
@@ -164,8 +168,8 @@
       @include breakpoint(small) {
         position: static;
         flex-basis: auto;
-        order: 0;
         height: auto;
+        order: 0;
       }
       img {
         width: 100%;
