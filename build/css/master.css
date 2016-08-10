@@ -871,9 +871,7 @@ main {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-direction: row; }
     .footer-input input[type="text"]::-webkit-input-placeholder {
       color: #3B73E2; }
     .footer-input input[type="text"]:-moz-placeholder {
@@ -896,8 +894,8 @@ main {
         .footer-input input[type="text"] {
           text-align: center; }
         .footer-input input[type="submit"] {
-          -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+          -ms-flex-preferred-size: auto;
+          flex-basis: auto;
           border: 0; } }
   .footer-social {
     display: -ms-flexbox;

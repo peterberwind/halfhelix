@@ -865,8 +865,7 @@ main {
     text-transform: uppercase; }
   .footer-input {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
+    flex-direction: row; }
     .footer-input input[type="text"]::-webkit-input-placeholder {
       color: #3B73E2; }
     .footer-input input[type="text"]:-moz-placeholder {
@@ -887,7 +886,7 @@ main {
         .footer-input input[type="text"] {
           text-align: center; }
         .footer-input input[type="submit"] {
-          flex-basis: 100%;
+          flex-basis: auto;
           border: 0; } }
   .footer-social {
     display: flex;
