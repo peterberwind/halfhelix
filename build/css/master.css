@@ -1671,17 +1671,21 @@ input[type="submit"] {
     order: 2;
     position: static;
     -ms-flex-preferred-size: auto;
-    flex-basis: auto; }
+    flex-basis: auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
   .principles .tile-text {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
     -ms-flex-order: 1;
     order: 1;
     position: static; } }
 
 @media (max-width: 767px) {
   .principles .tile-row {
-    height: 100vh; }
+    height: auto; }
   .principles .tile-image {
     height: 100vmin; }
   .principles .tile-text {

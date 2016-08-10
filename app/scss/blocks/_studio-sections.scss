@@ -104,16 +104,18 @@
         order: 2;
         position: static; 
         flex-basis: auto;
+        flex: 0 1 auto;
       }
       .tile-text {
         flex-basis: auto;
+        flex: 0 1 auto;
         order: 1;
         position: static;
       }
     }
     @include breakpoint(extra-small) {
       .tile-row {
-        height: 100vh;
+        height: auto;
       }
       .tile-image {
         height: 100vmin;
