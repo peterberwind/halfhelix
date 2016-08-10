@@ -1605,11 +1605,11 @@ input[type="submit"] {
     height: 70vmax;
     flex-direction: column; }
   .principles .tile-image {
-    order: 1;
+    order: 2;
     flex-basis: 100%;
     position: static; }
   .principles .tile-text {
-    order: 0;
+    order: 1;
     flex-basis: 100%;
     position: static; } }
 
