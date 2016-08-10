@@ -1609,10 +1609,10 @@ input[type="submit"] {
     order: 2;
     position: static;
     flex-basis: auto;
-    flex: 0 1 auto; }
+    flex: 0 1 50%; }
   .principles .tile-text {
-    flex-basis: auto;
-    flex: 0 1 auto;
+    flex-basis: 50%;
+    flex: 0 1 50%;
     order: 1;
     position: static; } }
 
