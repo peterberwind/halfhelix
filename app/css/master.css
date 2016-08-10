@@ -1027,8 +1027,9 @@ main {
   @media (max-width: 991px) {
     .home .tile-image {
       position: static;
-      flex-basis: 100%;
-      order: 0; } }
+      flex-basis: auto;
+      order: 0;
+      height: auto; } }
   .home .tile-image img {
     width: 100%;
     height: auto;
@@ -1059,8 +1060,9 @@ main {
     .home .tile-text {
       background-color: rgba(255, 255, 255, 0.7);
       padding-left: 0;
-      flex-basis: 100%;
-      order: 1; }
+      flex-basis: auto;
+      order: 1;
+      height: auto; }
       .home .tile-text.right {
         padding-right: 0; } }
   @media (max-width: 767px) {
@@ -1612,7 +1614,8 @@ input[type="submit"] {
   .principles .tile-text {
     flex-basis: auto;
     order: 1;
-    position: static; } }
+    position: static;
+    height: auto; } }
 
 @media (max-width: 767px) {
   .principles .tile-row {
@@ -1620,7 +1623,6 @@ input[type="submit"] {
   .principles .tile-image {
     height: 100vmin; }
   .principles .tile-text {
-    height: auto;
     padding: 15px; } }
 
 .preloader {
