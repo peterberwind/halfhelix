@@ -95,16 +95,18 @@
     }
     @include breakpoint(small) {
       .tile-row {
-        display: flex;
+        display: block;
         height: 70vmax;
         flex-direction: column;
       }
       .tile-image {
-        order: 2;
+        order: 1;
+        flex-basis: 100%;
         position: static; 
       }
       .tile-text {
-        order: 1;
+        order: 0;
+        flex-basis: 100%;
         position: static;
       }
     }
