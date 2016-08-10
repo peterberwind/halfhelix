@@ -1612,7 +1612,11 @@ input[type="submit"] {
     @media (max-width: 991px) {
       .what-we-do .img-wrapper {
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        -ms-flex-pack: start;
+        justify-content: flex-start; } }
   .what-we-do .what-we-do__item {
     text-align: center;
     min-width: 320px;
