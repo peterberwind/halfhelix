@@ -1558,9 +1558,7 @@ input[type="submit"] {
     padding-top: 80px; }
     @media (max-width: 991px) {
       .what-we-do .img-wrapper {
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start; } }
+        display: block; } }
   .what-we-do .what-we-do__item {
     text-align: center;
     min-width: 320px;

@@ -1611,12 +1611,7 @@ input[type="submit"] {
     padding-top: 80px; }
     @media (max-width: 991px) {
       .what-we-do .img-wrapper {
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        -ms-flex-pack: start;
-        justify-content: flex-start; } }
+        display: block; } }
   .what-we-do .what-we-do__item {
     text-align: center;
     min-width: 320px;
