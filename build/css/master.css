@@ -1678,7 +1678,7 @@ input[type="submit"] {
 
 @media (max-width: 767px) {
   .principles .tile-row {
-    height: 700px; }
+    height: 100%; }
   .principles .tile-image {
     height: 100vmin; }
   .principles .tile-text {
