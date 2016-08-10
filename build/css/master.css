@@ -1671,14 +1671,10 @@ input[type="submit"] {
     order: 2;
     position: static;
     -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%; }
+    flex-basis: auto; }
   .principles .tile-text {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%;
     -ms-flex-order: 1;
     order: 1;
     position: static; } }
@@ -1687,8 +1683,11 @@ input[type="submit"] {
   .principles .tile-row {
     height: auto; }
   .principles .tile-image {
-    height: 100vmin; }
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
   .principles .tile-text {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
     padding: 15px; } }
 
 .preloader {
