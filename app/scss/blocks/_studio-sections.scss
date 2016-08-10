@@ -49,6 +49,7 @@
     @include breakpoint(small) {
         padding: 0;
         min-width: 0;
+        flex-basis: auto;
         & + .what-we-do__item {
           margin-top: 5vh;
         }
@@ -102,8 +103,10 @@
       .tile-image {
         order: 2;
         position: static; 
+        flex-basis: auto;
       }
       .tile-text {
+        flex-basis: auto;
         order: 1;
         position: static;
       }

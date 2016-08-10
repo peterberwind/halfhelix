@@ -1567,7 +1567,8 @@ input[type="submit"] {
     @media (max-width: 991px) {
       .what-we-do .what-we-do__item {
         padding: 0;
-        min-width: 0; }
+        min-width: 0;
+        flex-basis: auto; }
         .what-we-do .what-we-do__item + .what-we-do__item {
           margin-top: 5vh; } }
     .what-we-do .what-we-do__item img {
@@ -1606,8 +1607,10 @@ input[type="submit"] {
     flex-direction: column; }
   .principles .tile-image {
     order: 2;
-    position: static; }
+    position: static;
+    flex-basis: auto; }
   .principles .tile-text {
+    flex-basis: auto;
     order: 1;
     position: static; } }
 
