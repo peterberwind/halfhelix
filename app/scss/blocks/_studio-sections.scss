@@ -95,7 +95,7 @@
     }
     @include breakpoint(small) {
       .tile-row {
-        display: block;
+        display: flex;
         height: 70vmax;
         flex-direction: column;
       }
@@ -112,7 +112,7 @@
     }
     @include breakpoint(extra-small) {
       .tile-row {
-        height: auto;
+        height: 700px;
       }
       .tile-image {
         height: 100vmin;
