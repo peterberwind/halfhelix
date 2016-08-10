@@ -103,17 +103,17 @@
       .tile-image {
         order: 2;
         position: static; 
-        flex-basis: 100%;
+        flex-basis: auto;
       }
       .tile-text {
-        flex-basis: 100%;
+        flex-basis: auto;
         order: 1;
         position: static;
       }
     }
     @include breakpoint(extra-small) {
       .tile-row {
-        height: auto;
+        height: 100vh;
       }
       .tile-image {
         height: 100vmin;

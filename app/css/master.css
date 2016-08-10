@@ -1608,15 +1608,15 @@ input[type="submit"] {
   .principles .tile-image {
     order: 2;
     position: static;
-    flex-basis: 100%; }
+    flex-basis: auto; }
   .principles .tile-text {
-    flex-basis: 100%;
+    flex-basis: auto;
     order: 1;
     position: static; } }
 
 @media (max-width: 767px) {
   .principles .tile-row {
-    height: auto; }
+    height: 100vh; }
   .principles .tile-image {
     height: 100vmin; }
   .principles .tile-text {
