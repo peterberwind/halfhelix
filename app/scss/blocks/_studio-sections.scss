@@ -39,6 +39,8 @@
     padding-top: 80px;
     @include breakpoint(small) {
       flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
     }
   }
   .what-we-do__item {
