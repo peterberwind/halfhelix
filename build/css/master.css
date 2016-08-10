@@ -1683,11 +1683,9 @@ input[type="submit"] {
   .principles .tile-row {
     height: auto; }
   .principles .tile-image {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%; }
+    height: 100vmin; }
   .principles .tile-text {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+    height: 100vmin;
     padding: 15px; } }
 
 .preloader {

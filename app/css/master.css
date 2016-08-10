@@ -1618,9 +1618,9 @@ input[type="submit"] {
   .principles .tile-row {
     height: auto; }
   .principles .tile-image {
-    flex-basis: 50%; }
+    height: 100vmin; }
   .principles .tile-text {
-    flex-basis: 50%;
+    height: 100vmin;
     padding: 15px; } }
 
 .preloader {
