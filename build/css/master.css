@@ -871,7 +871,9 @@ main {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .footer-input input[type="text"]::-webkit-input-placeholder {
       color: #3B73E2; }
     .footer-input input[type="text"]:-moz-placeholder {

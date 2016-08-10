@@ -59,6 +59,7 @@
     &-input {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       input[type="text"] {
         @include placeholder-color($blue);
       }

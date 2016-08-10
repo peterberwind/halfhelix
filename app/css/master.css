@@ -865,7 +865,8 @@ main {
     text-transform: uppercase; }
   .footer-input {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    flex-wrap: wrap; }
     .footer-input input[type="text"]::-webkit-input-placeholder {
       color: #3B73E2; }
     .footer-input input[type="text"]:-moz-placeholder {
