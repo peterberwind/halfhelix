@@ -20,7 +20,7 @@
     }
     @include breakpoint(extra-small) {
       // height: 50vh;
-      // height: 600px;
+      height: 600px;
     }
   }
 
@@ -144,25 +144,33 @@
       background: #fff;
     }
     &-row {
-
+      
       margin-bottom: 15vh;
       @include breakpoint(extra-large) {
         min-height: 768px;
       }
 
-      @include breakpoint(extra-small) {
+      @include breakpoint(small) {
         min-height: 0;
         height: auto;
+        display: flex;
+        flex-direction: column;
       }
+
     }
     &-image {
       background: #fff;
-      padding: 0;
       flex-basis: 70%;
+      @include breakpoint(small) {
+        position: static;
+        flex-basis: 100%;
+        order: 0;
+      }
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
         display: block;
+        object-fit: fill;
       }
     }
     &-text {
@@ -184,19 +192,25 @@
         text-align: right;
       }
 
+      @include breakpoint(medium) {
+        min-width: 500px;
+        padding-top: 0;
+      }
       @include breakpoint(small) {
         background-color: rgba(255,255,255, 0.7);
-        padding-left: 30px;
+        padding-left: 0;
+        flex-basis: 100%;
+        order: 1;
         &.right {
-          padding-right: 30px;
+          padding-right: 0;
         }
       }
 
       @include breakpoint(extra-small) {
         min-width: 0;
-        padding: 30px 15px;
+        padding: 30px 0;
         &.right {
-          padding: 30px 15px;
+          padding: 30px 0;
         }
       }
       .client {
@@ -207,8 +221,11 @@
       h3 {
         // margin-bottom: 35px;
         font-size: 4vmin;
+        @include breakpoint(medium) {
+          font-size: 1.5rem;
+        }
         @include breakpoint(extra-small) {
-            font-size: 7vmin
+            font-size: 1.5rem;
         }
         a {
           color: $blue;
@@ -219,12 +236,18 @@
       }
       p {
         font-size: rem(16);
+        @include breakpoint(medium) {
+          font-size: rem(14);
+        }
       }
 
       .btn-link {
         margin-top: 0;
         font-size: 1rem;
         padding: 0;
+        @include breakpoint(medium) {
+          font-size: rem(14);
+        }
       }
 
     }
