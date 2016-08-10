@@ -1608,9 +1608,9 @@ input[type="submit"] {
   .principles .tile-image {
     order: 2;
     position: static;
-    flex-basis: auto; }
+    flex-basis: 100%; }
   .principles .tile-text {
-    flex-basis: auto;
+    flex-basis: 100%;
     order: 1;
     position: static; } }
 

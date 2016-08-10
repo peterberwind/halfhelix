@@ -103,10 +103,10 @@
       .tile-image {
         order: 2;
         position: static; 
-        flex-basis: auto;
+        flex-basis: 100%;
       }
       .tile-text {
-        flex-basis: auto;
+        flex-basis: 100%;
         order: 1;
         position: static;
       }

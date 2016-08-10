@@ -1670,11 +1670,11 @@ input[type="submit"] {
     -ms-flex-order: 2;
     order: 2;
     position: static;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto; }
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
   .principles .tile-text {
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
     -ms-flex-order: 1;
     order: 1;
     position: static; } }
