@@ -1658,7 +1658,8 @@ input[type="submit"] {
 
 @media (max-width: 991px) {
   .principles .tile-row {
-    display: block;
+    display: -ms-flexbox;
+    display: flex;
     height: 70vmax;
     -ms-flex-direction: column;
     flex-direction: column; }
