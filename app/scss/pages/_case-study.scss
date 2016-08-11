@@ -1,11 +1,17 @@
 .case-study {
   .hero-section {
     background: transparent;
-    height: auto;
-    min-height: 0;
   }
   main {
     background: $light-grey;
+  }
+  .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -13,7 +19,10 @@
     figure {
       margin: 0;
       height: 100%;
-      position: relative;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .hero-section__banner {
 
@@ -57,7 +66,7 @@
 }
 
 .case-section {
-  padding: 60px 24px;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,6 +78,6 @@
     color: $blue;
   }
   @include breakpoint(extra-small) {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }

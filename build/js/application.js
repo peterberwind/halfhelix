@@ -153,7 +153,28 @@ function showProjects() {
     });
 }
 
+function runPreloader() {
+    if ($('.preloader').length>0 && localStorage.getItem('preloader')!='1') {
+        console.log(localStorage.getItem('preloader'));
+
+        var $svgElement = $('.preloader_mask');
+        var preloader_speed = 5000;
+        var y_end = 0;
+
+        $svgElement.animate(
+        { y: y_end },
+        preloader_speed,  function() {
+            $('body').removeClass('preloader-visible');
+            localStorage.setItem('preloader', '1');
+        });
+    } else {
+        $('body').removeClass('preloader-visible');
+    }
+}
+
+
 function initEvents() {
+    runPreloader(); 
     initAllAnchor('.anchor-js');
     videoMobilePause();
     initMenuToggle();
@@ -167,7 +188,6 @@ function initEvents() {
 
     // initHeaderColoring();
 }
-
 
 
 

@@ -27,13 +27,18 @@
 // What We Do
 &.what-we-do {
   background-color: #F2F2F2;
+  @include breakpoint(small) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .img-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     padding-top: 80px;
     @include breakpoint(small) {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
   .what-we-do__item {
@@ -44,6 +49,7 @@
     @include breakpoint(small) {
         padding: 0;
         min-width: 0;
+        flex-basis: auto;
         & + .what-we-do__item {
           margin-top: 5vh;
         }
@@ -97,11 +103,13 @@
       .tile-image {
         order: 2;
         position: static; 
+        flex-basis: auto;
       }
       .tile-text {
+        flex-basis: auto;
         order: 1;
         position: static;
-        padding: 0 24px;
+        height: auto;
       }
     }
     @include breakpoint(extra-small) {
@@ -112,7 +120,7 @@
         height: 100vmin;
       }
       .tile-text {
-        padding: 20px;
+        padding: 15px;
       }
 
     }

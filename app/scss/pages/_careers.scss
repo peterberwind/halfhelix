@@ -23,6 +23,10 @@
   p {
     font-size: rem(18);
   }
+  @include breakpoint(extra-small) {
+    padding: 30px 15px 60px;
+    border-bottom-width: 15px;
+  }
 }
 
 
@@ -52,20 +56,18 @@
   h2 {
     font-family: $ff-serif;
     font-size: rem(60);
-    padding: 0 24px;
+
   }
   p {
     font-size: rem(18);
-    padding: 0 24px;
+
 
   }
   @include breakpoint(extra-small) {
     h2 {
       font-size: rem(40);
     }
-    h2, p {
-      padding: 0 20px;
-    }
+
   }
 }
 
@@ -97,6 +99,11 @@
       opacity: 1;
     }
   }
+  @include breakpoint(extra-small) {
+    padding: 15px;
+    border-bottom-width: 15px;
+  }
+
 }
 
 .perks-title {
@@ -119,6 +126,9 @@
   top: 0;
   transition: 0.33s;
   background: $blue;
+  @include breakpoint(extra-small) {
+    padding: 15px;
+  }
 }
 
 @include breakpoint(small) {
