@@ -173,7 +173,28 @@ function runPreloader() {
 }
 
 
+function rollSmile() {
+    if ($('#homesmile').length>0) {
+
+        $(window).resize(function(event) {
+            var $smile = $('#homesmile svg');
+
+            var winwidth = $(window).width()-17;
+
+            var center = winwidth/2;
+
+            $('.hero-section').mousemove(function(event) {
+                var grad = 720/winwidth;
+                var deg = (event.pageX-center)*grad;
+                $smile.css({'transform': 'rotate('+deg+'deg)'});
+                $('#homesmile').css({left: event.pageX+'px'})
+            });
+        }).resize();
+    }
+}
+
 function initEvents() {
+    rollSmile();
     runPreloader(); 
     initAllAnchor('.anchor-js');
     videoMobilePause();
