@@ -1010,14 +1010,11 @@ main {
   background: #fff; }
 
 .home .tile-row {
-  margin-bottom: 15vh; }
-  @media (min-width: 1600px) {
-    .home .tile-row {
-      min-height: 768px; } }
+  margin-bottom: 15vh;
+  height: auto; }
   @media (max-width: 991px) {
     .home .tile-row {
       min-height: 0;
-      height: auto;
       display: flex;
       flex-direction: column; } }
 
@@ -1039,32 +1036,42 @@ main {
 .home .tile-text {
   padding: 30px;
   padding-left: 0;
+  padding-top: 0;
   flex-basis: 30%;
   min-width: 600px;
   text-align: inherit;
   justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left;
+  align-items: flex-end;
+  text-align: right;
   z-index: 2;
   background: #fff; }
   .home .tile-text.right {
     padding-right: 0;
     padding-left: 30px;
-    align-items: flex-end;
-    text-align: right; }
+    align-items: flex-start;
+    text-align: left; }
+    .home .tile-text.right h3, .home .tile-text.right .client {
+      margin-right: 0;
+      margin-left: -10vw; }
+  .home .tile-text h3, .home .tile-text .client {
+    margin-right: -10vw; }
   @media (min-width: 992px) and (max-width: 1199px) {
     .home .tile-text {
-      min-width: 500px;
-      padding-top: 0; } }
+      min-width: 500px; } }
   @media (max-width: 991px) {
     .home .tile-text {
       background-color: rgba(255, 255, 255, 0.7);
-      padding-left: 0;
+      padding-right: 0;
+      padding-top: 30px;
       flex-basis: auto;
       order: 1;
       height: auto; }
       .home .tile-text.right {
-        padding-right: 0; } }
+        padding-left: 0; }
+        .home .tile-text.right h3, .home .tile-text.right .client {
+          margin-left: 0; }
+      .home .tile-text h3, .home .tile-text .client {
+        margin-right: 0; } }
   @media (max-width: 767px) {
     .home .tile-text {
       min-width: 0;
@@ -1072,9 +1079,13 @@ main {
       .home .tile-text.right {
         padding: 30px 0; } }
   .home .tile-text .client {
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: -2.5rem;
     font-size: 1.2rem;
     font-family: "Moderat-Bold", sans-serif; }
+    @media (max-width: 991px) {
+      .home .tile-text .client {
+        margin-top: 0; } }
   .home .tile-text h3 {
     font-size: 4vmin; }
     @media (min-width: 992px) and (max-width: 1199px) {
