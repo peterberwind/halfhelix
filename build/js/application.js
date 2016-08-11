@@ -449,6 +449,7 @@ $(document).ready(
  
               var mapOptions = { 
                   zoom: 14, 
+                  draggable: !("ontouchend" in document),
                   center: new google.maps.LatLng(40.7175099, -73.9909217), 
                   mapTypeId: google.maps.MapTypeId.ROADMAP, 
                   disableDefaultUI: true, 
