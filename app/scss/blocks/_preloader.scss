@@ -13,6 +13,9 @@
   .preloader-visible & { display: flex; }
 }
 
+// .preloader_mask {
+//   transition: 5s;
+// }
 
 .preloader-visible {
   overflow-y: hidden;
