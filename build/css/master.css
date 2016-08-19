@@ -552,6 +552,12 @@ main {
     main {
       padding: 0 20px; } }
 
+.span-to-screen {
+  margin: 0 -24px; }
+  @media (max-width: 767px) {
+    .span-to-screen {
+      margin: 0 -20px; } }
+
 .header {
   position: fixed;
   z-index: 600;
@@ -1640,8 +1646,20 @@ input[type="submit"] {
   height: 370px; }
 
 .principles .tile-image {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 45%;
-  flex-basis: 45%; }
+  flex-basis: 45%;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .principles .tile-image img {
+    height: auto;
+    width: auto;
+    max-width: 40%;
+    max-height: 80%;
+    object-fit: contain; }
 
 .principles .tile-text {
   -ms-flex-preferred-size: 55%;

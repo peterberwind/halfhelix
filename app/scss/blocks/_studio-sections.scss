@@ -37,6 +37,7 @@
     justify-content: space-around;
     align-items: baseline;
     padding-top: 80px;
+
     @include breakpoint(small) {
       flex-direction: column;
     }
@@ -74,7 +75,17 @@
         height: 370px;
     }
     .tile-image {
+        display: flex;
         flex-basis: 45%;
+        align-items: center;
+        justify-content: center;
+        img {
+          height: auto;
+          width: auto;
+          max-width: 40%;
+          max-height: 80%;
+          object-fit: contain;
+        }
     }
     .tile-text {
         flex-basis: 55%;

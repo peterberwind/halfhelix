@@ -553,6 +553,12 @@ main {
     main {
       padding: 0 20px; } }
 
+.span-to-screen {
+  margin: 0 -24px; }
+  @media (max-width: 767px) {
+    .span-to-screen {
+      margin: 0 -20px; } }
+
 .header {
   position: fixed;
   z-index: 600;
@@ -1584,7 +1590,16 @@ input[type="submit"] {
   height: 370px; }
 
 .principles .tile-image {
-  flex-basis: 45%; }
+  display: flex;
+  flex-basis: 45%;
+  align-items: center;
+  justify-content: center; }
+  .principles .tile-image img {
+    height: auto;
+    width: auto;
+    max-width: 40%;
+    max-height: 80%;
+    object-fit: contain; }
 
 .principles .tile-text {
   flex-basis: 55%;

@@ -11,3 +11,10 @@ main {
     padding: 0 20px;
   }
 }
+
+.span-to-screen {
+  margin: 0 -24px;
+  @include breakpoint(extra-small) {
+    margin: 0 -20px;
+  }
+}
