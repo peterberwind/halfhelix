@@ -68,34 +68,7 @@
         }
     }
 
-    &__email {
-        position: absolute;
-        top: 20px;
-        left: 24px;
-        z-index: 200;
-        font-style: normal;
-        text-decoration: underline;
-        letter-spacing: 0.075rem;
-        @include breakpoint(extra-small) {
-            left: 20px;
-            top: 10px;
-        }
-        &:hover {
-            text-decoration: line-through;
-        }
-        a {
-          padding: 0;
-          @include breakpoint(small) {
-            font-size: rem(14)
-          }
-          @include breakpoint(extra-small) {
-            font-size: rem(14)
-          }
-        }
-        .third & {
-          text-decoration: none;
-        }
-    }
+    
 
     &__banner {
         @extend .v-align;

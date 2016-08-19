@@ -580,7 +580,7 @@ main {
     float: left;
     padding-bottom: 1px; }
     .home .header .header__studio-name {
-      opacity: 0; }
+      display: none; }
     @media (max-width: 991px) {
       .header .header__studio-name {
         font-size: 0.875rem; } }
@@ -589,6 +589,12 @@ main {
       @media (max-width: 991px) {
         .header .header__studio-name.anchor-js {
           font-size: 1.125rem; } }
+  .header .header__studio-email a {
+    color: #fff;
+    font-family: "Moderat-Regular", sans-serif;
+    transition: 0.6s;
+    float: left;
+    padding-bottom: 1px; }
   .header .header__nav {
     width: 450px;
     float: right; }
@@ -619,7 +625,9 @@ main {
   .header-dark .header__studio-name {
     color: #3d3d3d; }
     .home .header-dark .header__studio-name {
-      opacity: 1; }
+      display: block; }
+  .home .header-dark .header__studio-email {
+    display: none; }
   .header-dark a {
     color: #3d3d3d; }
   .header-dark a:hover, .header-dark a:active, .header-dark a.active {
@@ -690,30 +698,6 @@ main {
     transition-duration: 1s; }
     .hero-section__paralax-block.hidden {
       opacity: 0; }
-  .hero-section__email {
-    position: absolute;
-    top: 20px;
-    left: 24px;
-    z-index: 200;
-    font-style: normal;
-    text-decoration: underline;
-    letter-spacing: 0.075rem; }
-    @media (max-width: 767px) {
-      .hero-section__email {
-        left: 20px;
-        top: 10px; } }
-    .hero-section__email:hover {
-      text-decoration: line-through; }
-    .hero-section__email a {
-      padding: 0; }
-      @media (max-width: 991px) {
-        .hero-section__email a {
-          font-size: 0.875rem; } }
-      @media (max-width: 767px) {
-        .hero-section__email a {
-          font-size: 0.875rem; } }
-    .third .hero-section__email {
-      text-decoration: none; }
   .hero-section__banner {
     width: 80%;
     margin: 0;

@@ -21,7 +21,7 @@
         float: left;
         padding-bottom: 1px;
         .home & {
-            opacity: 0;
+            display: none;
         }
 
         @include breakpoint(small) {
@@ -36,6 +36,13 @@
             }
 
         }
+    }
+    .header__studio-email a {
+        color: #fff;
+        font-family: $ff-base;
+        transition: 0.6s;
+        float: left;
+        padding-bottom: 1px;
     }
 
     .header__nav {
@@ -77,7 +84,12 @@
 
         color: $dark-grey;
         .home & {
-            opacity: 1;
+            display: block;
+        }
+    }
+    .header__studio-email {
+        .home & {
+            display: none;
         }
     }
     
