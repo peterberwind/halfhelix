@@ -87,13 +87,13 @@
 
         h1 {
           font-size: rem(140);
-          font-family: $ff-base;
           color: $white;
           font-style: normal;
           margin-bottom: 0em;
           font-weight: bold;
-          font-family: $ff-bold;
+          font-family: $ff-serif;
           font-weight: normal;
+          .home & { font-family: $ff-bold; }
 
           @include breakpoint(small) {
             font-size: rem(110);

@@ -589,12 +589,16 @@ main {
       @media (max-width: 991px) {
         .header .header__studio-name.anchor-js {
           font-size: 1.125rem; } }
-  .header .header__studio-email a {
-    color: #fff;
-    font-family: "Moderat-Regular", sans-serif;
-    transition: 0.6s;
-    float: left;
-    padding-bottom: 1px; }
+  .header .header__studio-email {
+    display: none; }
+    .home .header .header__studio-email {
+      display: block; }
+    .header .header__studio-email a {
+      color: #fff;
+      font-family: "Moderat-Regular", sans-serif;
+      transition: 0.6s;
+      float: left;
+      padding-bottom: 1px; }
   .header .header__nav {
     width: 450px;
     float: right; }
@@ -712,13 +716,14 @@ main {
         padding: 0 10px; } }
     .hero-section__banner h1 {
       font-size: 8.75rem;
-      font-family: "Moderat-Regular", sans-serif;
       color: #fff;
       font-style: normal;
       margin-bottom: 0em;
       font-weight: bold;
-      font-family: "Moderat-Bold", sans-serif;
+      font-family: "Caslon", sans-serif;
       font-weight: normal; }
+      .home .hero-section__banner h1 {
+        font-family: "Moderat-Bold", sans-serif; }
       @media (max-width: 991px) {
         .hero-section__banner h1 {
           font-size: 6.875rem; } }
