@@ -3,9 +3,8 @@
 .contact-section {
     @include clearfix;
     .map-widget {
-        width: 50%;
         float: left;
-        height: 50vh;
+        width: 50%;
     }
 }
 
@@ -15,8 +14,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vh;
     background-color: $white;
+
+
     h3 {
         margin-bottom: 1.5em;
         letter-spacing: 0.125em;

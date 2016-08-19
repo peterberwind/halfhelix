@@ -158,8 +158,6 @@ function showProjects() {
 
 function runPreloader() {
     if ($('.preloader').length>0 && localStorage.getItem('preloader')!='1') {
-        console.log(localStorage.getItem('preloader'));
-
         var $svgElement = $('.preloader_mask');
         var preloader_speed = 5000;
         var y_end = 0;
@@ -231,6 +229,14 @@ function rollSmile() {
     }
 }
 
+function makeDivSquare() {
+    $(window).resize(function(event) {
+        var $el = $('.squarediv')
+        var width = $el.width();
+        $el.height(width);
+    }).resize();
+}
+
 function initEvents() {
     rollSmile();
     runPreloader(); 
@@ -239,6 +245,7 @@ function initEvents() {
     initMenuToggle();
     colorHeader();
     showProjects();
+    makeDivSquare();
     initHeaderBlockParalax(".hero-section__paralax-block");
     if ($('.home').length > 0) {
     } else {

@@ -1191,9 +1191,8 @@ main {
   display: block; }
 
 .contact-section .map-widget {
-  width: 50%;
   float: left;
-  height: 50vh; }
+  width: 50%; }
 
 .contact-section__text {
   float: right;
@@ -1201,7 +1200,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
   background-color: #fff; }
   .contact-section__text h3 {
     margin-bottom: 1.5em;
