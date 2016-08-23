@@ -238,8 +238,8 @@ function makeDivSquare() {
 }
 
 function initEvents() {
-    rollSmile();
-    runPreloader(); 
+    // rollSmile();
+    runPreloader();
     initAllAnchor('.anchor-js');
     videoMobilePause();
     initMenuToggle();
@@ -263,7 +263,7 @@ initEvents();
 
 // Hard code for map marker animation
 
-if($('#map').length>0) { 
+if($('#map').length>0) {
     $(window).scroll(function(event) {
         scroll = $(window).scrollTop();
         if ( scroll+50 >= $('#map').offset().top && scroll <= $('#map').offset().top + $('#map').innerHeight() ) {
