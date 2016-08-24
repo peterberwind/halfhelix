@@ -159,7 +159,7 @@ function showProjects() {
 function runPreloader() {
     if ($('.preloader').length>0 && localStorage.getItem('preloader')!='1') {
         var $svgElement = $('.preloader_mask');
-        var preloader_speed = 5000;
+        var preloader_speed = 6000;
         var y_end = 0;
 
 

@@ -10099,7 +10099,7 @@ Pathformer.prototype.TYPES = ['line', 'ellipse', 'circle', 'polygon', 'polyline'
 /**
  * List of attribute names which contain
  * data. This array list them to check if
- * they contain bad values, like percentage.
+ * they contain bad values, like percentage. 
  *
  * @type {Array}
  */
@@ -10170,7 +10170,7 @@ Pathformer.prototype.polylineToPath = function (element) {
   var i, path;
   var newElement = {};
   var points = element.points.trim().split(' ');
-
+  
   // Reformatting if points are defined without commas
   if (element.points.indexOf(',') === -1) {
     var formattedPoints = [];

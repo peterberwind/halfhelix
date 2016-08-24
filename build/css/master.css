@@ -1714,6 +1714,9 @@ input[type="submit"] {
     display: -ms-flexbox;
     display: flex; }
 
+.preloader_mask {
+  transition: .5s; }
+
 .preloader-visible {
   overflow-y: hidden; }
 
@@ -1921,7 +1924,7 @@ input[type="submit"] {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto; }
 
 .v-align, .hero-section__banner {
