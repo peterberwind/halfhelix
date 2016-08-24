@@ -2,7 +2,8 @@
   "name": "halfhelixSite",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "*"
+    "jquery": "*",
+    "vivus": "^0.3.1"
   },
   "devDependencies": {
     "bourbon": "^4.2.7",

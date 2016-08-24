@@ -256,7 +256,6 @@ function initEvents() {
 }
 
 
-
 initEvents();
 
 
@@ -274,3 +273,11 @@ if($('#map').length>0) {
         }
     });
 }
+
+// Homepage Animation
+
+new Vivus('hh-svg', {
+  type: 'delayed',
+  duration: 500,
+  animTimingFunction: Vivus.EASE
+});
