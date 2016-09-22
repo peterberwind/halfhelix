@@ -260,24 +260,14 @@ initEvents();
 
 
 
-// Hard code for map marker animation
 
-if($('#map').length>0) {
-    $(window).scroll(function(event) {
-        scroll = $(window).scrollTop();
-        if ( scroll+50 >= $('#map').offset().top && scroll <= $('#map').offset().top + $('#map').innerHeight() ) {
-            $('.marker-label').addClass('animate')
-        }
-        else {
-            $('.marker-label').removeClass('animate')
-        }
-    });
-}
 
 // Homepage Animation
 
-new Vivus('hh-svg', {
-  type: 'delayed',
-  duration: 500,
-  animTimingFunction: Vivus.EASE
-});
+if ($('body.home').length>0) {
+    new Vivus('hh-svg', {
+      type: 'delayed',
+      duration: 500,
+      animTimingFunction: Vivus.EASE
+    });
+}
