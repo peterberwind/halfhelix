@@ -16,26 +16,52 @@
 }
 
 @font-face {
+	font-family:'AtlasGrotesk-Bold';
+	src: url('../fonts/AtlasGrotesk-Bold.eot');
+	src: url('../fonts/AtlasGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AtlasGrotesk-Bold.woff') format('woff'),
+		url('../fonts/AtlasGrotesk-Bold.ttf') format('truetype'),
+		url('../fonts/AtlasGrotesk-Bold.svg#AtlasGrotesk-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FB02;
+}
+
+@font-face {
+	font-family:'AtlasGrotesk-Light';
+	src: url('../fonts/AtlasGrotesk-Light.eot');
+	src: url('../fonts/AtlasGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AtlasGrotesk-Light.woff') format('woff'),
+		url('../fonts/AtlasGrotesk-Light.ttf') format('truetype'),
+		url('../fonts/AtlasGrotesk-Light.svg#AtlasGrotesk-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FB02;
+}
+
+@font-face {
   font-family: 'LarishNeue';
   src: url('../fonts/LarishNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/LarishNeue.woff') format('woff'), url('../fonts/LarishNeue.ttf')  format('truetype'), url('../fonts/LarishNeue.svg#LarishNeue') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-    font-family: 'apercu-mono';
-    src: url("../fonts/apercu-mono-webfont.eot");
-    src: url("../fonts/apercu-mono-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu-mono-webfont.woff2") format("woff2"), url("../fonts/apercu-mono-webfont.woff") format("woff"), url("../fonts/apercu-mono-webfont.ttf") format("truetype"), url("../fonts/apercu-mono-webfont.svg#AvenirLTStd-Medium") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'apercu-mono';
+//     src: url("../fonts/apercu-mono-webfont.eot");
+//     src: url("../fonts/apercu-mono-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu-mono-webfont.woff2") format("woff2"), url("../fonts/apercu-mono-webfont.woff") format("woff"), url("../fonts/apercu-mono-webfont.ttf") format("truetype"), url("../fonts/apercu-mono-webfont.svg#AvenirLTStd-Medium") format("svg");
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-  font-family: "Caslon";
-  src: url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.eot"); /* IE9*/
-  src: url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.woff2") format("woff2"), /* chrome、firefox */
-  url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.woff") format("woff"), /* chrome、firefox */
-  url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.svg#Caslon Graphique W01 D") format("svg"); /* iOS 4.1- */
-}
+// @font-face {
+//   font-family: "Caslon";
+//   src: url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.eot"); /* IE9*/
+//   src: url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+//   url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.woff2") format("woff2"), /* chrome、firefox */
+//   url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.woff") format("woff"), /* chrome、firefox */
+//   url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+//   url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.svg#Caslon Graphique W01 D") format("svg"); /* iOS 4.1- */
+// }

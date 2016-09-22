@@ -389,24 +389,28 @@ html {
   font-style: normal; }
 
 @font-face {
+  font-family: 'AtlasGrotesk-Bold';
+  src: url("../fonts/AtlasGrotesk-Bold.eot");
+  src: url("../fonts/AtlasGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Bold.woff") format("woff"), url("../fonts/AtlasGrotesk-Bold.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Bold.svg#AtlasGrotesk-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FB02; }
+
+@font-face {
+  font-family: 'AtlasGrotesk-Light';
+  src: url("../fonts/AtlasGrotesk-Light.eot");
+  src: url("../fonts/AtlasGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Light.woff") format("woff"), url("../fonts/AtlasGrotesk-Light.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Light.svg#AtlasGrotesk-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FB02; }
+
+@font-face {
   font-family: 'LarishNeue';
   src: url("../fonts/LarishNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/LarishNeue.woff") format("woff"), url("../fonts/LarishNeue.ttf") format("truetype"), url("../fonts/LarishNeue.svg#LarishNeue") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-@font-face {
-  font-family: 'apercu-mono';
-  src: url("../fonts/apercu-mono-webfont.eot");
-  src: url("../fonts/apercu-mono-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu-mono-webfont.woff2") format("woff2"), url("../fonts/apercu-mono-webfont.woff") format("woff"), url("../fonts/apercu-mono-webfont.ttf") format("truetype"), url("../fonts/apercu-mono-webfont.svg#AvenirLTStd-Medium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Caslon";
-  src: url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.eot");
-  /* IE9*/
-  src: url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.eot?#iefix") format("embedded-opentype"), url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.woff2") format("woff2"), url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.woff") format("woff"), url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.ttf") format("truetype"), url("../fonts/6b2413a4fa9c58b0cbbb65628952140e.svg#Caslon Graphique W01 D") format("svg");
-  /* iOS 4.1- */ }
 
 @font-face {
   font-family: 'icomoon';
@@ -439,7 +443,7 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
   color: #3d3d3d;
-  font-family: "Moderat-Regular", sans-serif;
+  font-family: "AtlasGrotesk-Light", sans-serif;
   font-size: 0.875rem;
   line-height: 1.8;
   letter-spacing: 0; }
@@ -574,7 +578,7 @@ main {
       padding: 10px 15px; } }
   .header .header__studio-name {
     color: #fff;
-    font-family: "Moderat-Regular", sans-serif;
+    font-family: "AtlasGrotesk-Light", sans-serif;
     transition: 0.6s;
     float: left;
     padding-bottom: 1px; }
@@ -594,7 +598,7 @@ main {
       display: block; }
     .header .header__studio-email a {
       color: #fff;
-      font-family: "Moderat-Regular", sans-serif;
+      font-family: "AtlasGrotesk-Light", sans-serif;
       transition: 0.6s;
       float: left;
       padding-bottom: 1px; }
@@ -724,7 +728,7 @@ main {
       font-style: normal;
       margin-bottom: 0em;
       font-weight: bold;
-      font-family: "Caslon", sans-serif;
+      font-family: "LarishNeue", sans-serif;
       font-weight: normal; }
       .home .hero-section__banner h1 {
         font-family: "Moderat-Bold", sans-serif; }
@@ -749,7 +753,7 @@ main {
             padding: 0 10px; } }
     .hero-section__banner h3 {
       margin-bottom: 2.5rem;
-      font-family: "Moderat-Regular", sans-serif;
+      font-family: "AtlasGrotesk-Light", sans-serif;
       font-size: 1.25rem;
       font-style: normal;
       letter-spacing: 0.15625rem;
@@ -809,10 +813,10 @@ main {
   text-align: center; }
   .slogan-section h1 {
     font-size: 5rem;
-    font-family: "Caslon", sans-serif; }
+    font-family: "LarishNeue", sans-serif; }
   .slogan-section h2 {
     margin-bottom: 1em;
-    font-family: "Caslon", sans-serif;
+    font-family: "LarishNeue", sans-serif;
     font-size: 2.5rem;
     line-height: 1.6em; }
     @media (max-width: 767px) {
@@ -862,7 +866,7 @@ main {
         display: block; } }
     .footer-contact h3 {
       font-size: 1rem;
-      font-family: "Moderat-Regular", sans-serif; }
+      font-family: "AtlasGrotesk-Light", sans-serif; }
     .footer-contact p {
       font-size: 0.75rem; }
     .footer-contact a {
@@ -985,7 +989,7 @@ main {
     .tile-text .btn span {
       margin-left: 2em; }
   .tile-text h3 {
-    font-family: "Caslon", sans-serif;
+    font-family: "LarishNeue", sans-serif;
     font-size: 3rem;
     margin: 0;
     padding-bottom: 0.4em;
@@ -1028,7 +1032,7 @@ main {
   background-color: #F6F6F6;
   padding: 10px 20px; }
   .tile-title h2 {
-    font-family: "Caslon", sans-serif;
+    font-family: "LarishNeue", sans-serif;
     margin-bottom: .4em; }
   .tile-title p {
     margin-bottom: .0em; }
@@ -1246,11 +1250,11 @@ main {
   .contact-section__text h3 {
     margin-bottom: 1.5em;
     letter-spacing: 0.125em;
-    font-family: "Moderat-Regular", sans-serif;
+    font-family: "AtlasGrotesk-Light", sans-serif;
     font-size: 1.5rem;
     color: #181818; }
   .contact-section__text p {
-    font-family: "Moderat-Regular", sans-serif;
+    font-family: "AtlasGrotesk-Light", sans-serif;
     margin-bottom: 0;
     color: #181818;
     font-size: 1.125rem; }
@@ -1306,7 +1310,7 @@ main {
   .hire-form-wrapper h1 {
     margin-bottom: 78px;
     text-align: center;
-    font-family: "Caslon", sans-serif; }
+    font-family: "LarishNeue", sans-serif; }
   .hire-form-wrapper .form {
     width: 80%;
     max-width: 1000px;
@@ -1338,7 +1342,7 @@ input[type="text"], input[type="email"], input[type="submit"] {
   width: 100%;
   padding: 1rem;
   border: none;
-  font-family: "Moderat-Regular", sans-serif;
+  font-family: "AtlasGrotesk-Light", sans-serif;
   font-size: 1rem;
   letter-spacing: 0;
   outline: none; }
@@ -1585,7 +1589,7 @@ input[type="submit"] {
     margin-bottom: 0.5em;
     font-size: 3.75rem;
     text-align: center;
-    font-family: "Caslon", sans-serif;
+    font-family: "LarishNeue", sans-serif;
     font-style: normal; }
     @media (max-width: 767px) {
       .studio-section h1 {
@@ -1831,7 +1835,7 @@ input[type="submit"] {
   font-family: "Moderat-Bold", sans-serif; }
 
 .vacancy-title {
-  font-family: "Caslon", sans-serif;
+  font-family: "LarishNeue", sans-serif;
   font-size: 2.375rem; }
 
 .vacancy-readmore {
@@ -1846,7 +1850,7 @@ input[type="submit"] {
   text-align: center;
   padding: 80px 0; }
   .careers-perks h2 {
-    font-family: "Caslon", sans-serif;
+    font-family: "LarishNeue", sans-serif;
     font-size: 3.75rem; }
   .careers-perks p {
     font-size: 1.125rem; }
@@ -1892,7 +1896,7 @@ input[type="submit"] {
       border-bottom-width: 15px; } }
 
 .perks-title {
-  font-family: "Caslon", sans-serif;
+  font-family: "LarishNeue", sans-serif;
   font-size: 2rem; }
 
 .perks-descr {
