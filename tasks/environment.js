@@ -24,3 +24,9 @@ gulp.task('prod', function () {
     runSequence('html', 'scripts', 'styles', 'bundle-libraries', 'image', 'fonts', 'server', 'watch');
 
 });
+
+gulp.task('dist', function () {
+
+    console.log(config.notify.update('\n--------- Build Development Mode -- Dist  --------------------------------------\n'));
+    runSequence('html', 'scripts', 'styles', 'bundle-libraries', 'image', 'fonts');
+});
