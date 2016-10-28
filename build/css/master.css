@@ -1648,8 +1648,8 @@ input[type="submit"] {
   -ms-flex-pack: center;
   justify-content: center; }
   .principles .tile-image img {
-    height: auto;
-    width: auto;
+    height: 90%;
+    width: 90%;
     max-width: 40%;
     max-height: 80%;
     object-fit: contain; }
