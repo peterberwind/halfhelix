@@ -15,8 +15,8 @@ var plugins = gulploadPlugins();
  GULP: ENVIRONMENT :: Gulp Default Tasks -- build
 ===========================================================*/
 
-gulp.task('default', ['build']);
-gulp.task('build', ['build']);
+gulp.task('default', ['build', 'watch', 'server']);
+gulp.task('build', ['html', ]);
 
 
 /*-----------------------------------------------------------
